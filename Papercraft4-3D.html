@@ -72,37 +72,47 @@
 
                 </h3>
 				<p class=" animated zoomIn text-right">
-					"Only 4 photos &amp; Your dream is in Your hands”<br /> "Papercraft4 3D” + ordinary printer = 3D printer.<br />"Papercraft4 3D” - convert 4 photos directly into textured 3D model (.obj format), textured "paper model" prints or IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer.<br />Paper models, also called card models, "pepakura" or papercraft, are models constructed mainly from sheets of heavy paper, paperboard, card stock, or foam.
+					"Only 4 photos &amp; Your dream is in Your hands”<br /> "Papercraft4 3D” + ordinary printer = 3D printer.<br />"Papercraft4 3D” - convert 4 photos directly into textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer.<br />Paper models, also called card models, "pepakura" or papercraft, are models constructed mainly from sheets of heavy paper, paperboard, card stock, or foam.
 				</p>
 				<p class=" animated zoomIn">
-					<br /><br />1. Name and save project in text file.<br />2. Load 4 photos: top, front, right, rear.<br />
+					<br /><br />1. Name and save project in text file.<br />2. Load 4 photos: <span class="badge">top</span>, <span class="badge">front</span>, <span class="badge">right</span>, <span class="badge">rear</span>.<br />
 				</p><img class="img-responsive " src="img/2.png" />
 				<p class=" animated zoomIn">
-					<br /> 3. Set base point 0 (red) in each of 4 photos.
+					<br /> 3. Set base point <span class="badge">0 (red)</span> in each of 4 photos.
 				</p><img class="img-responsive " src="img/3.png" />
 				<p class=" animated zoomIn">
-					<br />4. Set points 1-7 (red) - each must be at least in 3 of 4 photos - [1][2][3], [1][3][4] or [1][2][4].(in each photo must be &gt;5 points)<br />5. Click 'calibrate cameras' - if calibration not 'ok!'(&gt;50) try check &amp; adjust points or add points 8 - 13(red).
+					<br />4. Set points <span class="badge">1-7 (red)</span> - each must be at least in 3 of 4 photos - <span class="badge">1</span><span class="badge">2</span><span class="badge">3</span>, <span class="badge">1</span><span class="badge">2</span><span class="badge">4</span> or <span class="badge">1</span><span class="badge">3</span><span class="badge">4</span> (in each photo must be &gt;5 points)<br />5. Click <span class="badge">calibrate cameras</span> - if calibration not <span class="badge">ok!</span> (is &gt;50) try checking &amp; adjusting points or adding points <span class="badge">8-13 (red)</span>.
 				</p><img class="img-responsive " src="img/5.png" />
 				<p class=" animated zoomIn">
-					<br />6. If Your model is symmetrically set symmetry line with 498, 499 (red) points in [1][2][4] photos.
+					<br />6. If your model is symmetrical, set symmetry line with <span class="badge">498, 499 (red)</span>  points in <span class="badge">1</span><span class="badge">2</span><span class="badge">4</span> photos.
 				</p><img class="img-responsive " src="img/6.png" />
 				<p class=" animated zoomIn">
-					<br />7. Set points 14 (red), 15, 16...(each must be at least in 2 of 4 photos)<br /> 8. Set edges of parts by typing text in blue pad:<br /> ' k2s3/7/15 ' is meaning triangle of points 3, 7, 15 cut from [2] photo (points must be typed in clockwise direction)<br /> ' k102s3/7/15 ' is meaning symmetrycal part<br /> ' k202s3/7/15 ' is meaning both original &amp; symmetrycal parts<br /> ' k-2s3/7/15 ' is meaning original part cutted from symmetrically side of photo<br /> ' k2s3/501/502/7/15 ' is meaning part with cubic spline (controlPoint1:501 controlPoint2:502) 502 = point 2 (blue), 607 = point 107 (blue).<br /> ' s4/6 ' is meaning merging two parts, containing points 4 and 6, in one.
+					<br />7. Set points <span class="badge">14 (red), 15, 16...</span> (each must be at least in 2 of 4 photos).<br />
+          8. Set edges of parts by typing text in the blue pad:<br />
+          <kbd>k2s3/7/15</kbd> - triangle of points 3, 7, 15 cut from <span class="badge">2</span> photo (points must be typed in clockwise direction).<br />
+          <kbd>k102s3/7/15</kbd> - symmetrycal part.<br />
+          <kbd>k202s3/7/15</kbd> - both original &amp; symmetrycal parts.<br />
+          <kbd>k-2s3/7/15</kbd> - original part cut from symmetrical side of photo.<br />
+          <kbd>k2s3/501/502/7/15</kbd> - part with cubic spline (control point 1 = <span class="badge">501</span> control point 2 = <span class="badge">502</span>) <span class="badge">502</span> = <span class="badge">point 2 (blue)</span>, <span class="badge">607</span> = point <span class="badge">107 (blue)</span>.<br />
+          <kbd>s4/6</kbd> - merging two parts, containing points 4 and 6, in one.
 				</p><img class="img-responsive " src="img/8.png" />
 				<p class=" animated zoomIn">
-                                <br /> ' k2c1/2/3 ' is meaning circle with centre in point 1, radius #1 in point 2, radius #2 in point 3   cut from [2] photo
-<br /> ' k2c1/2/3/4/5 ' is meaning ring sequential to circle with centre in point 4, radius #1 in point 5 (point 4 can be in one picture)
-<br /> ' k2c1/2/3/4/5/6/7 ' is meaning ring sequential to ring sequential to circle with centre in point 6, radius #1 in point 7 (point 6 can be in one picture)
+                                <br /> <kbd>k2c1/2/3</kbd> - circle with centre in point <span class="badge">1</span>, radius #1 in point <span class="badge">2</span>, radius #2 in point <span class="badge">3</span> cut from <span class="badge">2</span> photo
+<br /> <kbd>k2c1/2/3/4/5</kbd> - ring sequential to circle with centre in point <span class="badge">4</span>, radius #1 in point <span class="badge">5</span> (point <span class="badge">4</span> can be in one picture)
+<br /> <kbd>k2c1/2/3/4/5/6/7</kbd> - ring sequential to ring sequential to circle with centre in point <span class="badge">6</span>, radius #1 in point <span class="badge">7</span> (point <span class="badge">6</span> can be in one picture)
 <br /> etc
 				</p><img class="img-responsive " src="img/circle.png" />
 				<p class=" animated zoomIn">
 
 
 
-					<br />9. After typing, click 'save k &amp; s'.<br />10. Click ' .jpg' or ' .svg' and save for printing model parts or click ' .obj' and save .mtl and .obj files (textures for model same as source 4 photos). Click '.igs' and save IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer. </p>
+					<br />9. After typing, click <span class="badge">save k &amp; s</span>.<br />10. Click <span class="badge">.jpg</span> or <span class="badge">.svg</span> to save for printing model parts or click <span class="badge">.obj</span> to save <kbd>.mtl</kbd> and <kbd>.obj</kbd> files (textures for model same as source 4 photos). Click <span class="badge">.igs</span> to save in IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer. </p>
                                 <img class="img-responsive " src="img/10.png" />
 				<p class=" animated zoomIn">
-					<br /> One part can include max. 100 points (21 for 'circle').<br />One model can include max. 500 parts.<br /> If you see [x][x] or [x][x][x] in point info pad you can try 'auto align x or y' position of point.(in some cases it may be helpful).<br />Size of photos = any of (100 .. 7000)x(100 .. 7000) , but scale of photos [2], [3], [4] to photo [1] must be (x0.1 .. x1.9).<br />Exported jpeg files is 2480 x 3508 pixels (max  9933 x 14043). If set 491 and 492 point you can change size of model ('2500'= 1000 - 5000).
+					<br /> One part can include max. 100 points (21 for 'circle').<br />
+          One model can include max. 500 parts.<br /> If you see <kbd>[x][x]</kbd> or <kbd>[x][x][x]</kbd> in point info pad you can try <span class="badge">auto align x or y</span> position of point (in some cases it may be helpful).<br />
+          Size of photos can be from 100x100 to 7000x7000, but scale of photos <span class="badge">2</span>, <span class="badge">3</span>, <span class="badge">4</span> to photo <span class="badge">1</span> must be (x0.1 .. x1.9).<br />
+          Exported <kbd>.jpeg</kbd> files is 2480 x 3508 pixels (max  9933 x 14043). If you have set <span class="badge">491</span> and <span class="badge">492</span> points you can change size of model (<kbd>2500</kbd> can be from <kbd>1000</kbd> to <kbd>5000</kbd>).
 				</p>
 			</div>
 		</div>
