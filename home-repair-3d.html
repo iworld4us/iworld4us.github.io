@@ -15,10 +15,7 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"></script>
-    <link id="navbar" rel="import" href="navbar.html">
-    <link id="footer" rel="import" href="footer.html">
-    <script src="./js/loadimported.js"></script>
+
 
     <title>Home Repair 3D</title>
 </head>
@@ -26,9 +23,39 @@
 <!-- Main container -->
 <div class="page-container">
 
-  <!-- Navigation Bloc -->
-  <div id="navbar-container"></div>
-  <!-- Navigation Bloc END -->
+<div class="bloc bgc-black d-bloc" id="nav-bloc">
+	<div class="container bloc-sm">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Think &#128161;</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="https://github.com/iworld4us/nextion-2.4" target="_blank">3D Printer Nextion 2.4"</a>
+					</li>
+					<li>
+						<a href="Papercraft4-3D.html">Papercraft4 3D</a>
+					</li>
+					<li>
+						<a href="home-repair-3d.html">Home Repair 3D</a>
+					</li>
+					<li>
+						<a href="Vector-FX.html">Vector FX</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+
 
 <!-- bloc-5 -->
 <div class="bloc bgc-splashed-white l-bloc " id="bloc-4">
@@ -201,7 +228,43 @@
 <!-- bloc-5 END -->
 
 <!-- Footer - bloc-6 -->
-<div id="footer-container"></div>
+<div class="bloc bgc-splashed-white l-bloc" id="bloc-6" style="background-color: black;">
+	<div class="container bloc-lg" style="padding: 30px 0px !important;">
+		<div class="row">
+			<div class="col-sm-2">
+				<h4 class="mg-md animated pulse animDelay06" style="color: white; visibility:hidden">
+					© 2011-2017 Aleksandr Varaksa
+				</h4>
+			</div>
+
+			<div class="col-sm-2" style="margin-left: 15px;">
+					<a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important; visibility:hidden" class="btn (null) animated rollIn animDelay06 btn-wire" target="_blank">All products</a>
+			</div>
+			<div class="col-sm-2" style="margin-left: 15px;">
+				<a style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important; visibility:hidden" class="btn (null) animated rollIn animDelay06 btn-wire" href="mailto:i_appstore@yahoo.com">Contact Us</a>
+			</div>
+
+			<div class="col-sm-2">
+				<!-- HotLog -->
+				<span id="hotlog_counter"></span>
+				<span id="hotlog_dyn" class="animated rollIn animDelay06 btn" style="visibility:hidden"></span>
+				<script type="text/javascript">
+				    var hot_s = document.createElement('script');
+				    hot_s.type = 'text/javascript'; hot_s.async = true;
+				    hot_s.src = 'http://js.hotlog.ru/dcounter/2193088.js';
+				    hot_d = document.getElementById('hotlog_dyn');
+				    hot_d.appendChild(hot_s);
+				    </script>
+				<noscript>
+				    <a href="http://click.hotlog.ru/?2193088" target="_blank"><img
+				        src="http://hit40.hotlog.ru/cgi-bin/hotlog/count?s=2193088&amp;im=402" border="0"
+				        alt="HotLog"/></a>
+				</noscript>
+				<!-- /HotLog -->
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Footer - bloc-6 END -->
 </div>
 <!-- Main container END -->
