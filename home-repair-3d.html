@@ -6,12 +6,19 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="./css/style.css">
     <link rel='stylesheet' href='./css/animate.css' />
+
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"></script>
+    <link id="navbar" rel="import" href="navbar.html">
+    <link id="footer" rel="import" href="footer.html">
+    <script src="./js/loadimported.js"></script>
 
     <title>Home Repair 3D</title>
 </head>
@@ -19,41 +26,9 @@
 <!-- Main container -->
 <div class="page-container">
 
-<!-- Navigation Bloc -->
-<div id="b-nav" class="bloc-container">
-	<div id="bloc-nav" class="d-mode">
-		<div class="bloc bgc-black d-bloc" id="nav-bloc">
-			<div class="container bloc-sm">
-				<nav class="navbar row">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">Think &#128161;</a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-1">
-						<ul class="site-navigation nav navbar-nav">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="Papercraft4-3D.html">Papercraft4 3D</a>
-							</li>
-							<li>
-								<a href="home-repair-3d.html">Home Repair 3D</a>
-							</li>
-							<li>
-								<a href="Vector-FX.html">Vector FX</a>
-							</li>
-
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Navigation Bloc END -->
+  <!-- Navigation Bloc -->
+  <div id="navbar-container"></div>
+  <!-- Navigation Bloc END -->
 
 <!-- bloc-5 -->
 <div class="bloc bgc-splashed-white l-bloc " id="bloc-4">
@@ -64,26 +39,26 @@
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ovBP0yY-jWw?rel=0&showinfo=0" frameborder="0">
                     </iframe>
                 </div>
-                <h3 class="mg-md animated zoomIn">
-                    Home Repair 3D
-                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in App Store</a>
+                <h3 class="mg-md animated zoomIn" style="visibility:hidden">
+                    Home Repair 3D Pro
+                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in the App Store</a>
                 </h3>
 
-                <p class=" animated zoomIn">
+                <p class=" animated zoomIn" style="visibility:hidden">
                 <br />
                 </p><img class="img-responsive " src="img/hr1.jpg" />
                 <p>
 
 
 
-                <h3 class="mg-md animated zoomIn">
-                    Home Repair 3D Pro
-                <a href="https://itunes.apple.com/us/app/home-repair-3d-pro/id1063624308?ls=1&mt=12" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in Mac App Store</a>
+                <h3 class="mg-md animated zoomIn" style="visibility:hidden">
+                    Home Repair 3D Pro <span class="badge">Mac</span>
+                <a href="https://itunes.apple.com/us/app/home-repair-3d-pro/id1063624308?ls=1&mt=12" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in the Mac App Store</a>
                 </h3>
-                <p class=" animated zoomIn text-left">
+                <p class=" animated zoomIn text-left" style="visibility:hidden">
                 Create a project of your dream!<br />From the moment you could estimate the average costs for a room renovation or house construction as easily as playing the game.<br />You can import existing projects from iOS apps : 'Home Repair 3D' or 'Villa 3D'.<br />
                 </p>
-                <p class=" animated zoomIn">
+                <p class=" animated zoomIn" style="visibility:hidden">
                 <br />
                 </p><img class="img-responsive " src="img/hr2.jpg" />
 				<p>
@@ -144,9 +119,9 @@
                     </p>
 
                     <img class="img-responsive " src="img/hr3.jpg" />
-                    <h3 class="mg-md animated zoomIn">
-                    Home Repair 3D
-                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in App Store</a>
+                    <h3 class="mg-md animated zoomIn" style="visibility:hidden">
+                    Home Repair 3D Pro
+                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in the App Store</a>
                     </h3>
                     <p>
                     <br />Now you can calculate an estimate for renovation of a room as easily as constructing a house.<br />
@@ -211,11 +186,11 @@
 
                     <br /><img class="img-responsive " src="img/hr6.jpg" />
 
-                    <h3 class="mg-md animated zoomIn">
-                    Home Repair 3D
-                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in App Store</a>
+                    <h3 class="mg-md animated zoomIn" style="visibility:hidden">
+                    Home Repair 3D Pro
+                    <a href="https://itunes.apple.com/us/app/home-repair/id493593926?ls=1&mt=8" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in the App Store</a>
                     </h3>
-                    <p class=" animated zoomIn text-right">All parameters (currencies, cm-inch) can be changed on the fly.<br />Accuracy of input prices is $0.01 (or the equivalent in other currencies), for input parameters it is 0.01 cm or 0.01 in.
+                    <p class=" animated zoomIn text-right" style="visibility:hidden">All parameters (currencies, cm-inch) can be changed on the fly.<br />Accuracy of input prices is $0.01 (or the equivalent in other currencies), for input parameters it is 0.01 cm or 0.01 in.
 
 
 				</p>
@@ -226,28 +201,9 @@
 <!-- bloc-5 END -->
 
 <!-- Footer - bloc-6 -->
-<div class="bloc bgc-splashed-white l-bloc" id="bloc-6" style="background-color: black;">
-	<div class="container bloc-lg" style="padding: 30px 0px !important;">
-		<div class="row">
-			<div class="col-sm-2">
-				<h4 class="mg-md animated pulse animDelay06" style="color: white;">
-					© 2011-2017 Aleksandr Varaksa
-				</h4>
-			</div>
-
-			<div class="col-sm-1">
-				<div class="text-center">
-					<a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" target="_blank">All products</a>
-				</div>
-			</div>
-			<div class="col-sm-1">
-				<a style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" href="mailto:i_appstore@yahoo.com">Contact Us</a>
-			</div>
-
-		</div>
-	</div>
+<div id="footer-container"></div>
+<!-- Footer - bloc-6 END -->
 </div>
-<!-- Footer - bloc-6 END --></div>
 <!-- Main container END -->
 
 </body>
@@ -255,21 +211,5 @@
 <!-- Google Analytics -->
 <script>  (function(i, s, o, g, r, a, m){i<span class="badge">'GoogleAnalyticsObject'</span>=r;i<span class="badge">r</span>=i<span class="badge">r</span>||function(){  (i<span class="badge">r</span>.q=i<span class="badge">r</span>.q||<span class="badge"></span>).push(arguments)}, i<span class="badge">r</span>.l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)<span class="badge">0</span>;a.async=1;a.src=g;m.parentNode.insertBefore(a, m)  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');  ga('create', 'UA-69665128-1', 'auto');  ga('send', 'pageview');</script>
 <!-- Google Analytics END -->
-<!-- HotLog -->
-<span id="hotlog_counter"></span>
-<span id="hotlog_dyn"></span>
-<script type="text/javascript">
-    var hot_s = document.createElement('script');
-    hot_s.type = 'text/javascript'; hot_s.async = true;
-    hot_s.src = 'http://js.hotlog.ru/dcounter/2193088.js';
-    hot_d = document.getElementById('hotlog_dyn');
-    hot_d.appendChild(hot_s);
-    </script>
-<noscript>
-    <a href="http://click.hotlog.ru/?2193088" target="_blank"><img
-        src="http://hit40.hotlog.ru/cgi-bin/hotlog/count?s=2193088&amp;im=402" border="0"
-        alt="HotLog"></a>
-</noscript>
-<!-- /HotLog -->
 
 </html>

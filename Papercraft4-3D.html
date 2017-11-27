@@ -6,12 +6,19 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="./css/style.css">
     <link rel='stylesheet' href='./css/animate.css' />
+
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"></script>
+    <link id="navbar" rel="import" href="navbar.html">
+    <link id="footer" rel="import" href="footer.html">
+    <script src="./js/loadimported.js"></script>
 
     <title>Papercraft4 3D</title>
 </head>
@@ -19,41 +26,9 @@
 <!-- Main container -->
 <div class="page-container">
 
-<!-- Navigation Bloc -->
-<div id="b-nav" class="bloc-container">
-	<div id="bloc-nav" class="d-mode">
-		<div class="bloc bgc-black d-bloc" id="nav-bloc">
-			<div class="container bloc-sm">
-				<nav class="navbar row">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">Think &#128161;</a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-1">
-						<ul class="site-navigation nav navbar-nav">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="Papercraft4-3D.html">Papercraft4 3D</a>
-							</li>
-							<li>
-								<a href="home-repair-3d.html">Home Repair 3D</a>
-							</li>
-							<li>
-								<a href="Vector-FX.html">Vector FX</a>
-							</li>
-
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Navigation Bloc END -->
+  <!-- Navigation Bloc -->
+  <div id="navbar-container"></div>
+  <!-- Navigation Bloc END -->
 
 <!-- bloc-4 -->
 <div class="bloc bgc-splashed-white l-bloc" id="bloc-4">
@@ -64,9 +39,9 @@
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9tcMFrCSdzE?rel=0&showinfo=0" frameborder="0">
 					</iframe>
 				</div>
-				<h3 class="mg-md animated zoomIn">
-					Papercraft4 3D
-				<a href="https://itunes.apple.com/us/app/papercraft-3d/id1025949203?ls=1&mt=12" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in Mac App Store</a>
+				<h3 class="mg-md animated zoomIn" style="visibility:hidden">
+					Papercraft4 3D <span class="badge">Mac</span>
+				<a href="https://itunes.apple.com/us/app/papercraft-3d/id1025949203?ls=1&mt=12" class="btn btn-wire  btn-lg pull-left" target="_blank">Available in the Mac App Store</a>
                 <a href="https://youtu.be/jZSA_RS9crc?list=PLYIh6hxrUBcKdb5um3NeFBkMS6jxdoffX" class="btn btn-wire  btn-lg pull-left" target="_blank">Tutorial Part 1, 2, 3</a>
 
 
@@ -74,19 +49,19 @@
 				<p class=" animated zoomIn text-right">
 					"Only 4 photos &amp; Your dream is in Your hands”<br /> "Papercraft4 3D” + ordinary printer = 3D printer.<br />"Papercraft4 3D” - convert 4 photos directly into textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer.<br />Paper models, also called card models, "pepakura" or papercraft, are models constructed mainly from sheets of heavy paper, paperboard, card stock, or foam.
 				</p>
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br /><br />1. Name and save project in text file.<br />2. Load 4 photos: <span class="badge">top</span>, <span class="badge">front</span>, <span class="badge">right</span>, <span class="badge">rear</span>.<br />
 				</p><img class="img-responsive " src="img/2.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br /> 3. Set base point <span class="badge">0 (red)</span> in each of 4 photos.
 				</p><img class="img-responsive " src="img/3.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br />4. Set points <span class="badge">1-7 (red)</span> - each must be at least in 3 of 4 photos - <span class="badge">1</span><span class="badge">2</span><span class="badge">3</span>, <span class="badge">1</span><span class="badge">2</span><span class="badge">4</span> or <span class="badge">1</span><span class="badge">3</span><span class="badge">4</span> (in each photo must be &gt;5 points)<br />5. Click <span class="badge">calibrate cameras</span> - if calibration not <span class="badge">ok!</span> (is &gt;50) try checking &amp; adjusting points or adding points <span class="badge">8-13 (red)</span>.
 				</p><img class="img-responsive " src="img/5.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br />6. If your model is symmetrical, set symmetry line with <span class="badge">498, 499 (red)</span>  points in <span class="badge">1</span><span class="badge">2</span><span class="badge">4</span> photos.
 				</p><img class="img-responsive " src="img/6.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br />7. Set points <span class="badge">14 (red), 15, 16...</span> (each must be at least in 2 of 4 photos).<br />
           8. Set edges of parts by typing text in the blue pad:<br />
           <kbd>k2s3/7/15</kbd> - triangle of points 3, 7, 15 cut from <span class="badge">2</span> photo (points must be typed in clockwise direction).<br />
@@ -96,19 +71,19 @@
           <kbd>k2s3/501/502/7/15</kbd> - part with cubic spline (control point 1 = <span class="badge">501</span> control point 2 = <span class="badge">502</span>) <span class="badge">502</span> = <span class="badge">point 2 (blue)</span>, <span class="badge">607</span> = point <span class="badge">107 (blue)</span>.<br />
           <kbd>s4/6</kbd> - merging two parts, containing points 4 and 6, in one.
 				</p><img class="img-responsive " src="img/8.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
                                 <br /> <kbd>k2c1/2/3</kbd> - circle with centre in point <span class="badge">1</span>, radius #1 in point <span class="badge">2</span>, radius #2 in point <span class="badge">3</span> cut from <span class="badge">2</span> photo
 <br /> <kbd>k2c1/2/3/4/5</kbd> - ring sequential to circle with centre in point <span class="badge">4</span>, radius #1 in point <span class="badge">5</span> (point <span class="badge">4</span> can be in one picture)
 <br /> <kbd>k2c1/2/3/4/5/6/7</kbd> - ring sequential to ring sequential to circle with centre in point <span class="badge">6</span>, radius #1 in point <span class="badge">7</span> (point <span class="badge">6</span> can be in one picture)
 <br /> etc
 				</p><img class="img-responsive " src="img/circle.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 
 
 
 					<br />9. After typing, click <span class="badge">save k &amp; s</span>.<br />10. Click <span class="badge">.jpg</span> or <span class="badge">.svg</span> to save for printing model parts or click <span class="badge">.obj</span> to save <kbd>.mtl</kbd> and <kbd>.obj</kbd> files (textures for model same as source 4 photos). Click <span class="badge">.igs</span> to save in IGES format (NURBS surfaces) for use in CAD/CAM CNC and 3D printer. </p>
                                 <img class="img-responsive " src="img/10.png" />
-				<p class=" animated zoomIn">
+				<p class=" animated zoomIn" style="visibility:hidden">
 					<br /> One part can include max. 100 points (21 for 'circle').<br />
           One model can include max. 500 parts.<br /> If you see <kbd>[x][x]</kbd> or <kbd>[x][x][x]</kbd> in point info pad you can try <span class="badge">auto align x or y</span> position of point (in some cases it may be helpful).<br />
           Size of photos can be from 100x100 to 7000x7000, but scale of photos <span class="badge">2</span>, <span class="badge">3</span>, <span class="badge">4</span> to photo <span class="badge">1</span> must be (x0.1 .. x1.9).<br />
@@ -121,45 +96,8 @@
 <!-- bloc-4 END -->
 
 <!-- Footer - bloc-6 -->
-<div class="bloc bgc-splashed-white l-bloc" id="bloc-6" style="background-color: black;">
-	<div class="container bloc-lg" style="padding: 30px 0px !important;">
-		<div class="row">
-			<div class="col-sm-2">
-				<h4 class="mg-md animated pulse animDelay06" style="color: white;">
-					© 2011-2017 Aleksandr Varaksa
-				</h4>
-			</div>
-
-			<div class="col-sm-1">
-				<div class="text-center">
-					<a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" target="_blank">All products</a>
-				</div>
-			</div>
-			<div class="col-sm-1">
-				<a style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" href="mailto:i_appstore@yahoo.com">Contact Us</a>
-			</div>
-
-		</div>
-	</div>
-</div>
+<div id="footer-container"></div>
 <!-- Footer - bloc-6 END -->
-
-<!-- HotLog -->
-<span id="hotlog_counter"></span>
-<span id="hotlog_dyn"></span>
-<script type="text/javascript">
-    var hot_s = document.createElement('script');
-    hot_s.type = 'text/javascript'; hot_s.async = true;
-    hot_s.src = 'http://js.hotlog.ru/dcounter/2193088.js';
-    hot_d = document.getElementById('hotlog_dyn');
-    hot_d.appendChild(hot_s);
-    </script>
-<noscript>
-    <a href="http://click.hotlog.ru/?2193088" target="_blank"><img
-        src="http://hit40.hotlog.ru/cgi-bin/hotlog/count?s=2193088&amp;im=402" border="0"
-        alt="HotLog"></a>
-</noscript>
-<!-- /HotLog -->
 
 </div>
 <!-- Main container END -->
