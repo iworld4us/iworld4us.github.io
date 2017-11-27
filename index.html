@@ -6,12 +6,19 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="./css/style.css">
     <link rel='stylesheet' href='./css/animate.css' />
+
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.19/webcomponents-lite.js"></script>
+    <link id="navbar" rel="import" href="navbar.html">
+    <link id="footer" rel="import" href="footer.html">
+    <script src="./js/loadimported.js"></script>
 
     <title>Think &#128161;</title>
 </head>
@@ -20,62 +27,12 @@
 <div class="page-container">
 
 <!-- Navigation Bloc -->
-<div class="bloc bgc-black d-bloc" id="nav-bloc">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Think &#128161;</a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="https://github.com/iworld4us/nextion-2.4" target="_blank">3D Printer Nextion 2.4"</a>
-					</li>
-					<li>
-						<a href="Papercraft4-3D.html">Papercraft4 3D</a>
-					</li>
-					<li>
-						<a href="home-repair-3d.html">Home Repair 3D</a>
-					</li>
-					<li>
-						<a href="Vector-FX.html">Vector FX</a>
-					</li>
-
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
+<div id="navbar-container"></div>
 <!-- Navigation Bloc END -->
 
 <!-- bloc-2 -->
 <div class="bloc bgc-manatee tc-splashed-white bg-Screen-Shot-2015-09-24-at-20-08-44-copy-2 d-bloc" id="bloc-2">
 	<div class="container bloc-lg">
-
-		<div class="col-xs-12 col-md-8 col-md-offset-2">
-			<h3 class="text-center  tc-splashed-white animDelay04 animated fadeInDown">
-				<strong> </strong>
-			</h3>
-            <h3 class="text-center  tc-splashed-white animDelay04 animated fadeInDown">
-                <strong> </strong>
-            </h3>
-            <h3 class="text-center  tc-splashed-white animDelay04 animated fadeInDown">
-                <strong> </strong>
-            </h3>
-
-
-			<p class="text-center  animated zoomInDown animDelay04">
-
-
-			</p>
-
-		</div>
 	</div>
 </div>
 <!-- bloc-2 END -->
@@ -87,12 +44,12 @@
 
             <div class="text-center">
 
-                <h2 class="text-center animated zoomInDown animDelay04">
+                <h2 class="text-center animated zoomInDown animDelay04" style="visibility:hidden">
                 ONLY 4 PHOTOS &amp; YOUR DREAM IS IN YOUR HANDS
               </h2>
             </div>
             <div class="col-sm-12">
-                <a href="Papercraft4-3D.html"><img src="img/p11.jpg" class="img-responsive animated zoomIn center-block" /></a>
+                <a href="Papercraft4-3D.html"><img src="img/p11.jpg" class="img-responsive animated zoomIn center-block" style="visibility:hidden"/></a>
             </div>
 		</div>
 
@@ -105,7 +62,7 @@
 	<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06">
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06" style="visibility:hidden">
 						Papercraft4 3D  <span class="badge">Mac</span>
 					</h3>
 					<p class="text-right">
@@ -113,15 +70,15 @@
 					</p><a href="Papercraft4-3D.html" class="btn (null)  btn-lg pull-right btn-wire">About Papercraft4 3D</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/papercraft4-3d-mac.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/papercraft4-3d-mac.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/vector-fx-mac.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/vector-fx-mac.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Vector FX  <span class="badge">Mac</span> </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Vector FX  <span class="badge">Mac</span> </h3>
 					<p>
 						Vector FX converts images &amp; scans to color vector art with automated FX. You can edit it &amp; save in <kbd>.svg</kbd>.
 					</p><a href="Vector-FX.html" class="btn (null)  btn-lg btn-wire">About Vector FX</a>
@@ -133,21 +90,21 @@
 		<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06"> Only for Women </h3>
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06" style="visibility:hidden"> Only for Women </h3>
 					<p class="text-right">
 						Calendar of menstruations.<br>Two kinds of the calendar -the week begins from Sunday/Monday (button "s/m").<br>10 new themes for iPhone.<br>12 new flowers for iPad version.
 					</p><a href="https://itunes.apple.com/us/app/only-for-women/id488899924?mt=8" class="btn (null)  btn-lg pull-right btn-wire" target="_blank">Available in the App Store</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/women.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/women.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/women.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/women.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Period Tracker 3D  <span class="badge">Mac</span> </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Period Tracker 3D  <span class="badge">Mac</span> </h3>
 					<p>Calendar of menstruations.<br>Two kinds of the calendar - the week begins from Sunday/Monday.<br>Keeps history of menstrual cycles.<br>You can add a note to each cycle.
 					</p><a href="https://itunes.apple.com/us/app/period-tracker-3d/id1200378390?ls=1&mt=12" class="btn (null)  btn-lg btn-wire" target="_blank">Available in the Mac App Store</a>
 				</div>
@@ -157,21 +114,21 @@
 		<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06"> Metal Weight &amp; Cost Calculator </h3>
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06" style="visibility:hidden"> Metal Weight &amp; Cost Calculator </h3>
 					<p class="text-right">
 						Metal Weight &amp; Cost Calculator is a tool useful in a wide range of applications commonly employed by students, engineers, architects, builders and material traders.
 					</p><a href="https://itunes.apple.com/us/app/metal-weight-cost/id502369496?mt=8" class="btn (null)  btn-lg pull-right btn-wire" target="_blank">Available in the App Store</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/metal.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/metal.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/metal.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/metal.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Metal Calculator 3D  <span class="badge">Mac</span> </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Metal Calculator 3D  <span class="badge">Mac</span> </h3>
 					<p>
 						Metal Calculator 3D is a tool with history tape &amp; reusable calculations useful in a wide range of applications commonly employed by students, engineers, architects, builders and material traders.
 					</p><a href="https://itunes.apple.com/us/app/metal-calculator-3d/id1192650774?l=ru&ls=1&mt=12" class="btn (null)  btn-lg btn-wire" target="_blank">Available in the Mac App Store</a>
@@ -189,21 +146,21 @@
 		<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06"> Home Repair 3D Pro </h3>
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06"style="visibility:hidden"> Home Repair 3D Pro </h3>
 					<p class="text-right">
 						Are you a contractor that needs to quickly make quotes for your clients in the field? Or maybe you are starting a home landscaping or renovation project, and need a quick way to estimate costs and quantities? Now you can calculate an estimate for house construction as easy as for room renovation.
 					</p><a href="home-repair-3d.html" class="btn (null)  btn-lg pull-right btn-wire">About Home Repair 3D Pro</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/home.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/home.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/home-repair-3d-mac.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/home-repair-3d-mac.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Home Repair 3D Pro  <span class="badge">Mac</span> </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Home Repair 3D Pro  <span class="badge">Mac</span> </h3>
 					<p>
 						Create a project of your dream!<br>
 Now you can estimate the average costs for a room renovation or house construction as easy as playing a game.
@@ -214,21 +171,21 @@ Now you can estimate the average costs for a room renovation or house constructi
 		<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06"> Good Sizer 3D  <span class="badge">Mac</span> </h3>
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06" style="visibility:hidden"> Good Sizer 3D  <span class="badge">Mac</span> </h3>
 					<p class="text-right">
 						Good Sizer 3D helps you choose the right size of clothes in the US, Europe, UK, Japan or Russia.
 					</p><a href="https://itunes.apple.com/us/app/good-sizer-3d/id1195690408?ls=1&mt=12" class="btn (null)  btn-lg pull-right btn-wire">Available in the Mac App Store</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/gs3d.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/gs3d.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/GS_175_xxl.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/GS_175_xxl.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Good Sizer 3D - size converter of clothes </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Good Sizer 3D - size converter of clothes </h3>
 					<p>
 						Good Sizer 3D helps you choose theright size of clothes in the U.S., Europe, UK, Japan or Russia.<br>Enough to know one of the sizes - the rest are converted automatically.<br>A trip to country or purchase through online stores will become easier when you have all sizes in your hand.
 					</p><a href="https://itunes.apple.com/us/app/good-sizer-size-converter/id511707401?mt=8" class="btn (null)  btn-lg btn-wire" target="_blank">Available in the App Store</a>
@@ -239,7 +196,7 @@ Now you can estimate the average costs for a room renovation or house constructi
 		<div class="row voffset">
 			<div class="col-sm-6">
 				<div class="col-sm-9">
-					<h3 class="text-right mg-md animated fadeInLeft animDelay06">
+					<h3 class="text-right mg-md animated fadeInLeft animDelay06" style="visibility:hidden">
 						Calendar 3D  <span class="badge">Mac</span>
 					</h3>
 					<p class="text-right">
@@ -247,15 +204,15 @@ Now you can estimate the average costs for a room renovation or house constructi
 					</p><a href="https://itunes.apple.com/us/app/calendar-3d/id1202238610?mt=12" class="btn (null)  btn-lg pull-right btn-wire">Available in the App Store</a>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/c3D_175.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/c3D_175.jpg" style="visibility:hidden"/>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-3">
-					<img class="img-responsive animated zoomIn" src="img/villa.jpg" />
+					<img class="img-responsive animated zoomIn" src="img/villa.jpg" style="visibility:hidden"/>
 				</div>
 				<div class="col-sm-9">
-					<h3 class="mg-md animated fadeInRight animDelay06"> Villa 3D - Outdoor home design &amp; construction estimate tool </h3>
+					<h3 class="mg-md animated fadeInRight animDelay06" style="visibility:hidden"> Villa 3D - Outdoor home design &amp; construction estimate tool </h3>
 					<p>
 						Villa 3D - Move, transform, rotate boxes (from different materials) to create a project. Area, volume, number of necessary materials for real construction is automatically calculated!
 					</p><a href="https://itunes.apple.com/us/app/villa-3d/id880736824?mt=8" class="btn (null)  btn-lg btn-wire" target="_blank">Available in the App Store</a>
@@ -272,27 +229,7 @@ Now you can estimate the average costs for a room renovation or house constructi
 <!-- bloc-3 END -->
 
 <!-- Footer - bloc-6 -->
-<div class="bloc bgc-splashed-white l-bloc" id="bloc-6" style="background-color: black;">
-	<div class="container bloc-lg" style="padding: 30px 0px !important;">
-		<div class="row">
-			<div class="col-sm-2">
-				<h4 class="mg-md animated pulse animDelay06" style="color: white;">
-					© 2011-2017 Aleksandr Varaksa
-				</h4>
-			</div>
-
-			<div class="col-sm-1">
-				<div class="text-center">
-					<a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" target="_blank">All products</a>
-				</div>
-			</div>
-			<div class="col-sm-1">
-				<a style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important;" class="btn (null) animated rollIn animDelay06 btn-wire" href="mailto:i_appstore@yahoo.com">Contact Us</a>
-			</div>
-
-		</div>
-	</div>
-</div>
+<div id="footer-container"></div>
 <!-- Footer - bloc-6 END -->
 </div>
 <!-- Main container END -->
