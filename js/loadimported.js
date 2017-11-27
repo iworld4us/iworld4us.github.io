@@ -7,4 +7,8 @@ function ready(){
   getset("footer");
 }
 
-document.addEventListener("DOMContentLoaded", ready);
+if (document.readyState === 'complete') {
+    ready();
+} else {
+    document.addEventListener('DOMContentLoaded', ready);
+}
