@@ -15,47 +15,27 @@
   background-color: black;
 }
 
-/*
- * Custom translucent site header
- */
-
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background-color: black;
 }
+
 .site-header a {
   color: #999;
   transition: ease-in-out color .15s;
 }
+
 .site-header a:hover {
   color: #fff;
   text-decoration: none;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, .85);
+  background-color: black;
 }
 
-/*
- * Extra utilities
- */
-
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.flex-equal > * {
+.flex-md-equal > * {
+  display: block;
   -ms-flex: 1;
   -webkit-box-flex: 1;
   flex: 1;
-}
-
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
-  }
 }
