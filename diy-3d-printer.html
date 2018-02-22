@@ -1,223 +1,171 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="nextion,ultimaker,2,3,4,um2,um3,um4,diy,printer,cura, 3D,Arduino,MEGA,Ultimaker,Shield,due, v1.5.7,marlin,kimbra,marlinkimbra .obj, format, prints, Papercraft4, 3D, paper, model, avatar, design, origami, pepakura, craft, car, home, cad, scanner, kirigami, printer, diy, photo, 123D, lamborghini, aventador, maker, modeling, 4, photo, drawing, designer, ultimate, modelling, reconstruction, 123d, make, minecraft, майнкрафт, 3d, scanner">
+    <meta name="keywords" content="nextion,ultimaker,2,3,4,um2,um3,um4,diy,printer,cura, 3D,Arduino,MEGA,Ultimaker,Shield,due,v1.5.7,marlin,kimbra,marlinkimbra,.obj, format, prints, Papercraft4, 3D, paper, model, avatar, design, origami, pepakura, craft, car, home, cad, scanner, kirigami, printer, diy, photo, 123D, lamborghini, aventador, maker, modeling, 4, photo, drawing, designer, ultimate, modelling, reconstruction, 123d, make, minecraft, майнкрафт, 3d, scanner">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="author" content="Aleksandr Varaksa">
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="icon" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
+    <title>DIY 3D Printer | Think &#128161;</title>
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header navbar fixed-top navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="index.html">&nbsp;Think &#128161;</a>
 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <title>DIY 3D Printer</title>
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav container d-flex flex-column flex-md-row justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="diy-3d-printer.html">DIY 3D Printer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="papercraft4-3d.html">Papercraft4 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home-repair-3d.html">Home Repair 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vector-fx.html">Vector FX</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<div class="bloc bgc-black d-bloc" id="nav-bloc">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Think &#128161;</a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="diy-3d-printer.html">DIY 3D Printer</a>
-					</li>
-					<li>
-						<a href="Papercraft4-3D.html">Papercraft4 3D</a>
-					</li>
-					<li>
-						<a href="home-repair-3d.html">Home Repair 3D</a>
-					</li>
-					<li>
-						<a href="Vector-FX.html">Vector FX</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
+    <div class="container py-3" style="margin-top: 75px;">
+      <h3 class="wow zoomIn">DIY 3D Printer <span class="badge badge-primary">+ Arduino Due</span> <span class="badge badge-primary">+ Marlin Kimbra</span> <span class="badge badge-primary">+ Ultimaker 3 Extended</span></h3>
+    </div>
 
+    <div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FZ9j4zFZAjk?rel=0&showinfo=0" frameborder="0">
+				</iframe>
+    </div>
 
-<!-- bloc-4 -->
-<div class="bloc bgc-splashed-white l-bloc" id="bloc-4">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-			
-				<h3 class="mg-md animated zoomIn" style="visibility:hidden">
-					DIY 3D Printer <span class="badge">+ Arduino Due</span> <span class="badge">+ Marlin Kimbra</span>
-					 <span class="badge">+ Ultimaker 3 Extended</span>
-				</h3>
-				
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FZ9j4zFZAjk?rel=0&showinfo=0" frameborder="0">
-					</iframe>
-				</div>
-				<h3 class="mg-md animated zoomIn" style="visibility:hidden">
-					
-				<a href="https://github.com/iworld4us/nextion-2.4" class="btn btn-wire  btn-lg" target="_blank">Nextion Firmware</a>
-				<a href="https://github.com/MKFirmware/MK4duo" class="btn btn-wire  btn-lg" target="_blank">MK4duo Firmware Printers 3D for Arduino and Arduino DUE</a>
-                <a href="https://github.com/Ultimaker/Ultimaker3Extended" class="btn btn-wire  btn-lg" target="_blank">Ultimaker 3 Extended hardware source files</a>
-                <a href="http://reprap.org/wiki/Ultimaker%27s_v1.5.7_PCB" class="btn btn-wire  btn-lg" target="_blank">Ultimaker Shield</a>
-              
-                
-				
-                </h3>
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /><br /><kbd>DIY Ultimaker 3 4 Extended ++</kbd><br />
-				</p><img class="img-responsive " src="img/um4/um4.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 1. 6 panels <kbd>h=h+40mm</kbd> (<kbd>215x215x340mm</kbd> printing area).
-				</p><img class="img-responsive " src="img/um4/box.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 2. Parts.
-				</p><img class="img-responsive " src="img/um4/parts1.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 3. Arduino Ultimaker Shield - modified for Arduino Due.
-				</p><img class="img-responsive " src="img/um4/board.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 4. Delete three power <kbd>5V</kbd> pins.
-				</p><img class="img-responsive " src="img/um4/del_pp_pins.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 5. Delete <kbd>pin3</kbd> and connect <kbd>3.3V</kbd> from <kbd>pin2</kbd> to <kbd>++</kbd> pins.
-				</p><img class="img-responsive " src="img/um4/33_12v.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 6. Delete wiring from <kbd>d2/d3/d4</kbd> pins (<span class="badge">Attention</span>: <kbd>24V</kbd>) .
-				</p><img class="img-responsive " src="img/um4/x234.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 7. Mount three Level Shitter (<kbd>PC817</kbd>).
-				</p><img class="img-responsive " src="img/um4/LS.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 8. Mount EEPROM.
-				</p><img class="img-responsive " src="img/um4/eeprom.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 9. And connect Nextion 3.2 display to <kbd>comm3</kbd> (<kbd>GND/RX/TX</kbd>) and <kbd>5V</kbd>.
-				</p><img class="img-responsive " src="img/um4/24lscomm.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 10. Connect three wire to SD card slot (<kbd>MISO/MOSI/SCK</kbd>) <kbd>CS(SDSS)</kbd> to <kbd>d53</kbd>.
-				</p><img class="img-responsive " src="img/um4/to_sd.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 11. <kbd>3.3v</kbd> from Nextion to SD (<kbd>GND</kbd> to <kbd>GND</kbd>).
-				</p><img class="img-responsive " src="img/um4/33_to_sd.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 12. <kbd>1k</kbd> for <kbd>DRV8825</kbd> (delete fault pin from driver).
-				</p><img class="img-responsive " src="img/um4/1k_8825.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 13. <kbd>DRV8825</kbd>.
-				</p><img class="img-responsive " src="img/um4/DRV8825.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 14. Set current before motor connection (for extruder 16 microstep max).
-				</p><img class="img-responsive " src="img/um4/8825.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 15. <kbd>TMC2130</kbd> for silent X/Y without spi 16 microstep (remove all jumpers and <kbd>100k</kbd> ground resistor) (en/dir/step for protection can be connected through <kbd>390 Om</kbd>).
-				</p><img class="img-responsive " src="img/um4/2130_vref.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 16. Make protection for <kbd>TMC</kbd> drivers.
-				</p><img class="img-responsive " src="img/um4/protection.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 17. Ultimaker Shield - modification reference.
-				</p><img class="img-responsive " src="img/um4/ultimaboard.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 18. Write Nextion Firmware to MicroSD and flash it.
-				</p><img class="img-responsive " src="img/um4/um4_sc.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 19. Power <kbd>24v 7A</kbd> (separate for heated bed - external <kbd>MOSFET</kbd>) / <kbd>5V 2A</kbd> for Nextion and three Fans  / <kbd>12V 1A</kbd> for Arduino and Fans / <kbd>24V 4A</kbd> for motor Drivers and Hotend.
-				</p><img class="img-responsive " src="img/um4/power.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 20. Top.
-				</p><img class="img-responsive " src="img/um4/top.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 21. Fan x2.
-				</p><img class="img-responsive " src="img/um4/fan.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 22. Feeder x2.
-				</p><img class="img-responsive " src="img/um4/fider.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 23. Hotend <kbd>24V 30W</kbd> x2.
-				</p><img class="img-responsive " src="img/um4/heads.jpg" />
-				<p class=" animated zoomIn" style="visibility:hidden">
-					<br /> 24. Two colors printing (<kbd>SBS</kbd>).
-				</p><img class="img-responsive " src="img/um4/2col.jpg" />
-				
-				
-				
-				
-				
-				
-				
-				
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-4 END -->
+    <div class="py-3 wow zoomIn text-center" style=" margin-top: 25px;">
+      <a href="https://github.com/iworld4us/nextion-2.4" class="btn btn-lg btn-outline-primary" target="_blank">Nextion Firmware</a>&nbsp;
+		  <a href="https://github.com/MKFirmware/MK4duo" class="btn btn-lg btn-outline-primary" target="_blank">MK4duo 3D Printer Firmware</a>&nbsp;
+      <a href="https://github.com/Ultimaker/Ultimaker3Extended" class="btn btn-lg btn-outline-primary" target="_blank">Ultimaker 3 Extended hardware source</a>&nbsp;
+      <a href="http://reprap.org/wiki/Ultimaker%27s_v1.5.7_PCB" class="btn btn-lg btn-outline-primary" target="_blank">Ultimaker Shield</a>&nbsp;
+    </div>
 
-<!-- Footer - bloc-6 -->
-<div class="bloc bgc-splashed-white l-bloc" id="bloc-6" style="background-color: black;">
-	<div class="container bloc-lg" style="padding: 30px 0px !important;">
-		<div class="row">
-			<div class="col-sm-2">
-				<h4 class="mg-md animated pulse animDelay06" style="color: white; visibility:hidden">
-					© 2011-2018 Aleksandr Varaksa
-				</h4>
-			</div>
+    <div class="py-3 text-center" style="margin-top: 25px;">
+        <p class="wow zoomIn">
+					<br><br><kbd>DIY Ultimaker 3 4 Extended ++</kbd><br>
+				</p><img class="img-fluid" src="img/um4/um4.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">1.</span> 6 panels <kbd>h=h+40mm</kbd> (<kbd>215x215x340mm</kbd> printing area).
+				</p><img class="img-fluid" src="img/um4/box.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">2.</span> Parts.
+				</p><img class="img-fluid" src="img/um4/parts1.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">3.</span> Arduino Ultimaker Shield - modified for Arduino Due.
+				</p><img class="img-fluid" src="img/um4/board.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">4.</span> Delete three power <kbd>5V</kbd> pins.
+				</p><img class="img-fluid" src="img/um4/del_pp_pins.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">5.</span> Delete <kbd>pin3</kbd> and connect <kbd>3.3V</kbd> from <kbd>pin2</kbd> to <kbd>++</kbd> pins.
+				</p><img class="img-fluid" src="img/um4/33_12v.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">6.</span> Delete wiring from <kbd>d2/d3/d4</kbd> pins (<span class="badge badge-danger">Attention:</span> <kbd>24V</kbd>) .
+				</p><img class="img-fluid" src="img/um4/x234.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">7.</span> Mount three Level Shitter (<kbd>PC817</kbd>).
+				</p><img class="img-fluid" src="img/um4/LS.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">8.</span> Mount EEPROM.
+				</p><img class="img-fluid" src="img/um4/eeprom.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">9.</span> And connect Nextion 3.2 display to <kbd>comm3</kbd> (<kbd>GND/RX/TX</kbd>) and <kbd>5V</kbd>.
+				</p><img class="img-fluid" src="img/um4/24lscomm.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">10.</span> Connect three wires to SD card slot (<kbd>MISO/MOSI/SCK</kbd>) <kbd>CS(SDSS)</kbd> to <kbd>d53</kbd>.
+				</p><img class="img-fluid" src="img/um4/to_sd.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">11.</span> <kbd>3.3v</kbd> from Nextion to SD (<kbd>GND</kbd> to <kbd>GND</kbd>).
+				</p><img class="img-fluid" src="img/um4/33_to_sd.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">12.</span> <kbd>1k</kbd> for <kbd>DRV8825</kbd> (delete fault pin from driver).
+				</p><img class="img-fluid" src="img/um4/1k_8825.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">13.</span> <kbd>DRV8825</kbd>.
+				</p><img class="img-fluid" src="img/um4/DRV8825.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">14.</span> Set current before motor connection (for extruder 16 microstep max).
+				</p><img class="img-fluid" src="img/um4/8825.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">15.</span> <kbd>TMC2130</kbd> for silent X/Y without spi 16 microstep (remove all jumpers and <kbd>100k</kbd> ground resistor) (en/dir/step for protection can be connected through <kbd>390 Om</kbd>).
+				</p><img class="img-fluid" src="img/um4/2130_vref.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">16.</span> Make protection for <kbd>TMC</kbd> drivers.
+				</p><img class="img-fluid" src="img/um4/protection.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">17.</span> Ultimaker Shield - modification reference.
+				</p><img class="img-fluid" src="img/um4/ultimaboard.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">18.</span> Write Nextion Firmware to MicroSD and flash it.
+				</p><img class="img-fluid" src="img/um4/um4_sc.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">19.</span> Power <kbd>24v 7A</kbd> (separate for heated bed - external <kbd>MOSFET</kbd>) / <kbd>5V 2A</kbd> for Nextion and three Fans  / <kbd>12V 1A</kbd> for Arduino and Fans / <kbd>24V 4A</kbd> for motor Drivers and Hotend.
+				</p><img class="img-fluid" src="img/um4/power.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">20.</span> Top.
+				</p><img class="img-fluid" src="img/um4/top.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">21.</span> Fan x2.
+				</p><img class="img-fluid" src="img/um4/fan.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">22.</span> Feeder x2.
+				</p><img class="img-fluid" src="img/um4/fider.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">23.</span> Hotend <kbd>24V 30W</kbd> x2.
+				</p><img class="img-fluid" src="img/um4/heads.jpg" />
+				<p class="wow zoomIn">
+					<br><span class="badge badge-dark">24.</span> Two colors printing (<kbd>SBS</kbd>).
+        </p><img class="img-fluid" src="img/um4/2col.jpg" />
+    </div>
 
-			<div class="col-sm-2" style="margin-left: 15px;">
-					<a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important; visibility:hidden" class="btn (null) animated rollIn animDelay06 btn-wire" target="_blank">All products</a>
-			</div>
-			<div class="col-sm-2" style="margin-left: 15px;">
-				<a style="color: white !important; border-color: rgba(255, 255, 255, 0.8) !important; visibility:hidden" class="btn (null) animated rollIn animDelay06 btn-wire" href="mailto:i_appstore@yahoo.com">Contact Us</a>
-			</div>
+    <footer class="p-3">
+      <div class="row">
+        <div class="col-12 col-md text-white">
+          &copy; Aleksandr Varaksa 2011-2018
+          &nbsp;
+          <a href="https://itunes.apple.com/us/developer/aleksandr-varaksa/id478681813" role="button" class="btn btn-outline-light btn-sm wow flipInX" target="_blank">All products</a>
+          &nbsp;
+          <a href="mailto:i_appstore@yahoo.com" role="button" class="btn btn-outline-light btn-sm wow flipInX">Contact Us</a>
+          <!-- HotLog -->
+      		<span id="hotlog_counter"></span>
+      		<span id="hotlog_dyn" class="wow flipInX"></span>
+      		<script type="text/javascript">var hot_s = document.createElement('script');hot_s.type = 'text/javascript';hot_s.async = true;hot_s.src = 'https://js.hotlog.ru/dcounter/2193088.js';hot_d = document.getElementById('hotlog_dyn');hot_d.appendChild(hot_s);</script>
+      		<noscript><a href="https://click.hotlog.ru/?2193088" target="_blank"><img src="https://hit40.hotlog.ru/cgi-bin/hotlog/count?s=2193088&amp;im=402" border="0" alt="HotLog"/></a></noscript>
+          <!-- /HotLog -->
+        </div>
+      </div>
+    </footer>
 
-			<div class="col-sm-2">
-				<!-- HotLog -->
-				<span id="hotlog_counter"></span>
-				<span id="hotlog_dyn" class="animated rollIn animDelay06 btn" style="visibility:hidden"></span>
-				<script type="text/javascript">
-				    var hot_s = document.createElement('script');
-				    hot_s.type = 'text/javascript'; hot_s.async = true;
-				    hot_s.src = 'http://js.hotlog.ru/dcounter/2193088.js';
-				    hot_d = document.getElementById('hotlog_dyn');
-				    hot_d.appendChild(hot_s);
-				    </script>
-				<noscript>
-				    <a href="http://click.hotlog.ru/?2193088" target="_blank"><img
-				        src="http://hit40.hotlog.ru/cgi-bin/hotlog/count?s=2193088&amp;im=402" border="0"
-				        alt="HotLog"/></a>
-				</noscript>
-				<!-- /HotLog -->
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-6 END -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
-</div>
-<!-- Main container END -->
-
-</body>
-
-<!-- Google Analytics -->
-<script>  (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)}, i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m)  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');  ga('create', 'UA-69665128-1', 'auto');  ga('send', 'pageview');</script>
-<!-- Google Analytics END -->
-
-
+    <!-- Google Analytics -->
+    <script>  (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)}, i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m)  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');  ga('create', 'UA-69665128-1', 'auto');  ga('send', 'pageview');</script>
+    <!-- Google Analytics END -->
+  </body>
 </html>
