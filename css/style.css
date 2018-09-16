@@ -40,14 +40,10 @@ footer {
   flex: 1;
 }
 
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.privacy-policy {
+  margin-top: 7em;
 }
 
-.middle {
-    display: table-cell;
-    vertical-align: middle;
+.bold {
+  font-weight: 600;
 }
