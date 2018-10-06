@@ -33,7 +33,7 @@ footer {
   background-color: black;
 }
 
-.flex-md-equal > * {
+.flex-md-equal>* {
   display: block;
   -ms-flex: 1;
   -webkit-box-flex: 1;
