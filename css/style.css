@@ -20,12 +20,11 @@
 }
 
 .site-header a {
-  color: #999;
   transition: ease-in-out color .15s;
 }
 
 .site-header a:hover {
-  color: #fff;
+  color: #eee !important;
   text-decoration: none;
 }
 
@@ -33,7 +32,7 @@ footer {
   background-color: black;
 }
 
-.flex-md-equal > * {
+.flex-md-equal>* {
   display: block;
   -ms-flex: 1;
   -webkit-box-flex: 1;
