@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Sonsie+One&display=swap');
 
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(calc(100% - 540px + 6.5rem));
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .navbar-brand {
-	font-family: 'Sonsie One', cursive;
+  font-family: 'Sonsie One', cursive;
+  max-width: calc(100% - 4.5rem);
+  overflow: hidden;
+}
+
+@media (max-width: 540px) {
+  #brand {
+    animation: move 7s infinite ease-in-out;
+  }
 }
 
 .container {
