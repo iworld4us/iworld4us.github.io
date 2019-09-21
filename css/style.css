@@ -5,7 +5,7 @@
     transform: none;
   }
   50% {
-    transform: translateX(calc(100% - 540px + 6.5rem));
+    transform: translateX(calc(100% - 435px));
   }
   100% {
     transform: none;
