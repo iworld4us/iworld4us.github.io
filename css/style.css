@@ -24,6 +24,14 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .wow.fadeInLeft,
+  .wow.fadeInRight {
+    animation: none !important;
+    visibility: visible !important;
+  }
+}
+
 .container {
   max-width: 960px;
 }
@@ -54,7 +62,7 @@
   text-decoration: none;
 }
 
-footer {
+footer:not(.blockquote-footer) {
   background-color: black;
 }
 
@@ -66,8 +74,7 @@ footer {
 }
 
 .privacy-policy {
-  margin-top: 7em;
-  margin-bottom: 10em;
+  margin: 7em 0 3em 0;
   width: 90%;
 }
 
