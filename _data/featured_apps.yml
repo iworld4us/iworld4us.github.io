@@ -1,0 +1,72 @@
+-
+  - name: Papercraft4 3D
+    mac: true
+    desc: 'Convert 4 photos directly into textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or <kbd>IGES</kbd> format (NURBS surfaces) for use in CAD/CAM CNC and 3D printers.'
+    more: Papercraft4-3D.html
+    icon: papercraft4-3d-mac.jpg
+
+  - name: Vector FX
+    mac: true
+    desc: 'Converts images &amp; scans to color vector art with automated FX. You can edit it and save in <kbd>.svg</kbd> format.'
+    more: Vector-FX.html
+    icon: vector-fx-mac.jpg
+
+-
+  - name: Only for Women
+    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday/Monday (<kbd>s/m</kbd> button).<br>10 new themes for iPhone.<br>12 new flowers for iPad version.'
+    store: https://apps.apple.com/us/app/only-for-women/id488899924?mt=8&ls=1
+    icon: women.jpg
+
+  - name: Period Tracker 3D
+    mac: true
+    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday/Monday.<br>Keeps history of menstrual cycles.<br>You can add a note to each cycle.'
+    store: https://apps.apple.com/us/app/period-tracker-3d/id1200378390?mt=12&ls=1
+    icon: women.jpg
+
+-
+  - name: Metal Weight &amp; Cost Calculator
+    desc: 'A tool useful in a wide range of applications commonly employed by students, engineers, architects, builders and material traders.'
+    store: https://apps.apple.com/us/app/metal-weight-cost/id502369496?mt=8&ls=1
+    icon: metal.jpg
+
+  - name: Metal Calculator 3D
+    mac: true
+    desc: 'A tool with history tape &amp; reusable calculations useful in a wide range of applications commonly employed by students, engineers, architects, builders and material traders.'
+    store: https://apps.apple.com/us/app/metal-calculator-3d/id1192650774?mt=12&ls=1
+    icon: metal.jpg
+
+-
+  - name: Home Repair 3D Pro
+    desc: 'Are you a contractor that needs to quickly make quotes for your clients in the field? Or maybe you are starting a home landscaping or renovation project, and need a quick way to estimate costs and quantities? Now you can calculate an estimate for house construction as easy as for room renovation.'
+    more: home-repair-3d.html
+    icon: home-repair-3d-mac.jpg
+
+  - name: Home Repair 3D Pro
+    mac: true
+    desc: 'Create a project of your dream!<br>Now you can estimate the average costs for a room renovation or house construction as easy as playing a game.'
+    more: home-repair-3d.html
+    icon: home-repair-3d-mac.jpg
+
+-
+  - name: Good Sizer 3D
+    mac: true
+    desc: 'Helps you choose the right size of clothes in the US, Europe, UK, Japan or Russia.'
+    store: https://apps.apple.com/us/app/good-sizer-3d/id1195690408?mt=12&ls=1
+    icon: gs3d.jpg
+
+  - name: Good Sizer 3D - size converter of clothes
+    desc: 'Helps you choose the right size of clothes in the U.S., Europe, UK, Japan or Russia.<br>Enough to know one of the sizes - the rest are calculated automatically.<br>A trip to country or purchase through online stores will become easier when you have all sizes in your hand.'
+    store: https://apps.apple.com/us/app/good-sizer-size-converter/id511707401?mt=8&ls=1
+    icon: GS_175_xxl.jpg
+
+-
+  - name: Calendar 3D
+    mac: true
+    desc: 'Event calendar (To Do list).<br>You see elapsed/remaining time from/to event.<br>Each event can be periodic.'
+    store: https://apps.apple.com/us/app/calendar-3d/id1202238610?mt=12&ls=1
+    icon: c3D_175.jpg
+
+  - name: Villa 3D - CAD Home Design
+    desc: 'Move, transform, rotate boxes (made with different materials) to create a project. Area, volume, and number of necessary materials for real construction are automatically calculated!'
+    store: https://apps.apple.com/us/app/villa-3d/id880736824?mt=8&ls=1
+    icon: villa.jpg
