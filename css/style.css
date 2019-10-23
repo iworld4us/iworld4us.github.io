@@ -32,6 +32,10 @@
   }
 }
 
+.topmost {
+  margin-top: 56px;
+}
+
 .container {
   max-width: 960px;
 }
@@ -80,4 +84,26 @@ footer:not(.blockquote-footer) {
 
 .bold {
   font-weight: 600;
+}
+
+@keyframes scroll {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(.5em);
+  }
+}
+
+#scroll-widget {
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16pt;
+  z-index: 1000;
+  color: #76767699;
+  animation: scroll 5s ease infinite;
+  transition: opacity 1s ease;
 }
