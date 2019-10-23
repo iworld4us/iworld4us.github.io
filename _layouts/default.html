@@ -70,8 +70,8 @@
         </div>
     </footer>
 
-    <div id="scroll-widget">
-        <i id="scroll-icon" class="fas fa-chevron-down"></i>
+    <div id="scroll-widget" class="visible">
+        <i class="fas fa-chevron-down"></i>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -96,7 +96,7 @@
         ga('send', 'pageview');
 
         // Scroll widget
-        $('#scroll-icon').on('click', event => {
+        $('#scroll-widget').on('click', event => {
             $('html, body').animate({
                 scrollTop: "+=" + visualViewport.height.toString()
             }, 1000);
@@ -104,9 +104,9 @@
 
         $(document).on('scroll', event => {
             if ($(document).height() < (scrollY + visualViewport.height + 1)) {
-                $('#scroll-widget').css('opacity', 0);
+                $('#scroll-widget').removeClass('visible');
             } else {
-                $('#scroll-widget').css('opacity', 1);
+                $('#scroll-widget').addClass('visible');
             }
         });
     </script>

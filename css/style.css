@@ -88,22 +88,29 @@ footer:not(.blockquote-footer) {
 
 @keyframes scroll {
   0%, 100% {
-    transform: none;
+    transform: translateX(-50%);
   }
   50% {
-    transform: translateY(.5em);
+    transform: translate3d(-50%, .5em, 0);
   }
 }
 
 #scroll-widget {
   position: fixed;
   bottom: 1em;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 16pt;
+  left: 50%;
   z-index: 1000;
+
+  font-size: 1.5em;
   color: #76767699;
+
   animation: scroll 5s ease infinite;
-  transition: opacity 1s ease;
+  transition: all 1s ease;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+#scroll-widget.visible {
+  opacity: .9;
 }
