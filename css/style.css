@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sonsie+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Sonsie+One&display=swap");
 
 @keyframes move {
   0% {
@@ -12,8 +12,8 @@
   }
 }
 
-.navbar-brand {
-  font-family: 'Sonsie One', cursive;
+.site-header > .navbar-brand {
+  font-family: "Sonsie One", cursive;
   max-width: calc(100% - 4.5rem);
   overflow: hidden;
 }
@@ -36,8 +36,13 @@
   margin-top: 56px;
 }
 
-.container {
+.container, .mw-960px {
   max-width: 960px;
+}
+
+.mw-960px {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .icon {
@@ -58,7 +63,7 @@
 }
 
 .site-header a {
-  transition: ease-in-out color .15s;
+  transition: ease-in-out color 0.15s;
 }
 
 .site-header a:hover {
@@ -70,7 +75,7 @@ footer:not(.blockquote-footer) {
   background-color: black;
 }
 
-.flex-md-equal>* {
+.flex-md-equal > * {
   display: block;
   -ms-flex: 1;
   -webkit-box-flex: 1;
@@ -87,11 +92,12 @@ footer:not(.blockquote-footer) {
 }
 
 @keyframes scroll {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%);
   }
   50% {
-    transform: translate3d(-50%, .5em, 0);
+    transform: translate3d(-50%, 0.5em, 0);
   }
 }
 
@@ -112,5 +118,5 @@ footer:not(.blockquote-footer) {
 }
 
 #scroll-widget.visible {
-  opacity: .9;
+  opacity: 0.9;
 }
