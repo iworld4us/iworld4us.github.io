@@ -2,13 +2,13 @@
   - name: Papercraft4 3D
     mac: true
     desc: 'Convert 4 photos directly into textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or <kbd>IGES</kbd> format (NURBS surfaces) for use in CAD/CAM CNC and 3D printers.'
-    more: Papercraft4-3D.html
+    more: /Papercraft4-3D
     icon: papercraft4-3d-mac.jpg
 
   - name: Vector FX
     mac: true
     desc: 'Converts images &amp; scans to color vector art with automated FX. You can edit it and save in <kbd>.svg</kbd> format.'
-    more: Vector-FX.html
+    more: /Vector-FX
     icon: vector-fx-mac.jpg
 
 -
@@ -38,13 +38,13 @@
 -
   - name: Home Repair 3D Pro
     desc: 'Are you a contractor that needs to quickly make quotes for your clients in the field? Or maybe you are starting a home landscaping or renovation project, and need a quick way to estimate costs and quantities? Now you can calculate an estimate for house construction as easy as for room renovation.'
-    more: home-repair-3d.html
+    more: /home-repair-3d
     icon: home-repair-3d-mac.jpg
 
   - name: Home Repair 3D Pro
     mac: true
     desc: 'Create a project of your dream!<br>Now you can estimate the average costs for a room renovation or house construction as easy as playing a game.'
-    more: home-repair-3d.html
+    more: /home-repair-3d
     icon: home-repair-3d-mac.jpg
 
 -
