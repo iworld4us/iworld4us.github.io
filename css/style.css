@@ -29,6 +29,10 @@ body {
   }
 }
 
+.site-header {
+  z-index: 1031;
+}
+
 .site-header > .navbar-brand {
   font-family: "Sonsie One", cursive;
   max-width: calc(100% - 4.5rem);
