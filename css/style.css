@@ -79,6 +79,10 @@ body {
   background-color: black;
 }
 
+.car-img {
+  display: block;
+}
+
 .site-header {
   background-color: black;
 }
