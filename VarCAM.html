@@ -1,0 +1,249 @@
+---
+title: VarCAM
+description: VarCAM Concept Car Constructor
+---
+
+<style>
+  #page-nav {
+    top: 56px !important;
+  }
+
+  h1:before,
+  h2:before,
+  h3:before {
+    display: block;
+    content: " ";
+    margin-top: -112px;
+    padding-top: 112px;
+    visibility: hidden;
+  }
+
+  .topmost-double {
+    margin-top: 112px;
+  }
+
+  @media (min-width: 768px) {
+
+    h1:before,
+    h2:before,
+    h3:before {
+      margin-top: -114px !important;
+      padding-top: 114px !important;
+    }
+
+    .topmost-double {
+      margin-top: 114px;
+    }
+  }
+
+</style>
+
+<nav id="page-nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
+  <a class="navbar-brand">VarCAM</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav-menu" aria-controls="page-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="page-nav-menu">
+    <ul class="nav flex-column flex-lg-row justify-content-around">
+      <li class="nav-item my-3 my-lg-0">
+        <a href="https://apps.apple.com/app/varcam-concept-car-constructor/id1485853842?mt=12&ls=1" class="nav-link btn btn-success" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
+      </li>
+
+      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#surfaces">Surfaces</a></li>
+      <li class="nav-item ml-0 ml-md-2 dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Parts</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#parts">Parts</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#part"><kbd>part</kbd></a>
+          <a class="dropdown-item" href="#bolt"><kbd>bolt</kbd></a>
+          <a class="dropdown-item" href="#ring"><kbd>ring</kbd></a>
+          <a class="dropdown-item" href="#tube"><kbd>tube</kbd></a>
+        </div>
+      </li>
+      <li class="nav-item ml-0 ml-md-2 dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Operators</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#operators">Operators</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#vp"><kbd>vp</kbd></a>
+          <a class="dropdown-item" href="#conn"><kbd>conn</kbd></a>
+          <a class="dropdown-item" href="#lock"><kbd>lock</kbd></a>
+        </div>
+      </li>
+      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#special-points">Special points</a></li>
+      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#notes"><i class="fas fa-question-circle"></i> Notes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid text-center topmost-double">
+  <h1 class="mt-3">VarCAM Concept Car Constructor</h1>
+  <a href="https://apps.apple.com/app/varcam-concept-car-constructor/id1485853842?mt=12&ls=1" class="nav-link btn btn-success mw-960px" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
+
+  <div class="mt-3 embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/23zKTRnraSg?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
+  </div>
+
+  <div class="mt-3 embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iZ24YWFgV30?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
+  </div>
+
+  <h2 id="surfaces" class="mt-3">Surfaces: <kbd>surf</kbd></h2>
+  <p class="mw-960px">1. Add body points: <span class="badge badge-secondary">1</span>&ndash;<span class="badge badge-secondary">489</span> &mdash; <i>regular</i> points, <span class="badge badge-secondary">500</span>&ndash;<span class="badge badge-secondary">999</span> &mdash; <i>control</i> points:</p>
+  <img class="img-fluid" src="img/vcam/body_point.png" />
+
+  <p class="mw-960px mt-3">2. Input <kbd>hord</kbd> (<span class="badge badge-pill badge-secondary">gray</span>) and <kbd>modi</kbd> (<span class="badge badge-pill badge-warning">orange</span>). In the 3D view <span class="badge badge-pill badge-danger">red</span> points are <i>regular</i>, <span class="badge badge-pill badge-light">white</span> &mdash; <i>control</i>, <span class="badge badge-pill badge-success">green</span> &mdash; unused:</p>
+  <kbd>hord <span class="badge badge-secondary">id</span> s <span class="badge badge-primary">point 1</span> / <span class="badge badge-primary">point 2 or control point</span> / <span class="badge badge-primary">...</span></kbd><br>
+  <kbd>modi <span class="badge badge-secondary">id</span> s <span class="badge badge-primary">point 1</span> / <span class="badge badge-primary">point 2 or control point</span> / <span class="badge badge-primary">...</span></kbd>
+  <div class="row mt-3">
+    <div class="col-12 col-md-4 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf3_details.png" /></div>
+    <div class="col-12 col-md-8 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf3.png" /></div>
+  </div>
+
+  <p class="mw-960px mt-3">3. Solid NURBS surfaces are generated <b>automatically</b> by intersecting <kbd>hord</kbd> and <kbd>modi</kbd>:</p>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf2_details.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf0.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf2_options.png" /></div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf1_details.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf1.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/surf1_options.png" /></div>
+  </div>
+
+  <h2 class="mt-3" id="parts">Parts</h2>
+  <p class="mw-960px mt-3">To add a part to your model, simply select the type in the lower-right corner of the app's window, and drag the part from the left of the 2D viewport to the desired location:</p>
+  <img class="img-fluid" src="img/vcam/part_point.png" />
+
+  <h3 class="mt-3" id="part"><kbd>part</kbd></h3>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/part_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/part.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/part_options.png" /></div>
+  </div>
+
+  <h3 class="mt-3" id="bolt"><kbd>bolt</kbd></h3>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt0_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt0.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt0_options.png" /></div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt2_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt2.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt2_options.png" /></div>
+  </div>
+
+  <h3 class="mt-3" id="ring"><kbd>ring</kbd></h3>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/ring_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/ring.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/ring_options.png" /></div>
+  </div>
+
+  <h3 class="mt-3" id="tube"><kbd>tube</kbd></h3>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube1_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube1.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube1_options.png" /></div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube0_details.png" /></div>
+    <div class="col-12 col-md-3 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube0.png" /></div>
+    <div class="col-12 col-md-6 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube0_options.png" /></div>
+  </div>
+
+  <h2 class="mt-3" id="operators">Operators</h2>
+  <p class="mw-960px mt-3">Operators are entered in the tallest textbox on the right of the app's window.</p>
+
+  <h3 class="mt-3" id="vp"><kbd>vp</kbd></h3>
+  <p class="mw-960px mt-3">This operator has 2 variants. The first one simply sticks 2 points together (points <span class="badge badge-secondary">235</span> and <span class="badge badge-secondary">120</span> on the example images below):</p>
+  <kbd>vp <span class="badge badge-primary">point 1</span> / <span class="badge badge-primary">point 2</span></kbd>
+  <div class="row mt-3">
+    <div class="col-12 col-md-4 m-2 m-md-0"><img class="img-fluid" src="img/vcam/vp0_details.png" /></div>
+    <div class="col-12 col-md-8 m-2 m-md-0"><img class="img-fluid" src="img/vcam/vp0.png" /></div>
+  </div>
+  <p class="mw-960px mt-3">The second variant enforces the first point to be on the line between the two other points (point <span class="badge badge-secondary">226</span> is on the line between points <span class="badge badge-secondary">120</span> and <span class="badge badge-secondary">121</span> (not visible here) on the example images below).<br>
+    If the two specified line points are the same, the point will be aligned on the corresponding axis (available for <a href="#special-points">Special points</a> and <a href="#bolt"><kbd>bolt</kbd></a>s); notably, in this case the point can be moved along the line outside of the line segment.</p>
+  <kbd>vp <span class="badge badge-primary">point</span> = <span class="badge badge-primary">line point 1</span> / <span class="badge badge-primary">line point 2</span></kbd>
+  <div class="row mt-3">
+    <div class="col-12 col-md-4 m-2 m-md-0"><img class="img-fluid" src="img/vcam/vp=_details.png" /></div>
+    <div class="col-12 col-md-8 m-2 m-md-0"><img class="img-fluid" src="img/vcam/vp=.png" /></div>
+  </div>
+
+  <h3 class="mt-3" id="conn"><kbd>conn</kbd></h3>
+  <p class="mw-960px mt-3">Describes <a href="#parts">parts</a> that are connected to a <a href="#surfaces">surface</a> in order to <b>automatically</b> cut these parts accordingly. Specify the points (which are on the side which is going to be cut from) of the parts:</p>
+  <kbd><span class="badge badge-secondary">surface code</span></kbd><br>
+  <kbd>conn <span class="badge badge-primary">ending point of one part</span> / <span class="badge badge-primary">ending point of another part</span> / <span class="badge badge-primary">...</span></kbd>
+  <div class="row mt-3">
+    <div class="col-12 col-md-4 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube2_connsurf.png" /></div>
+    <div class="col-12 col-md-8 m-2 m-md-0"><img class="img-fluid" src="img/vcam/tube2.png" /></div>
+  </div>
+
+  <h3 class="mt-3" id="lock"><kbd>lock</kbd></h3>
+  <p class="mw-960px mt-3">Describes a parent-child relationship between points. <span class="badge badge-primary">dx</span>, <span class="badge badge-primary">dy</span>, and <span class="badge badge-primary">dz</span> are offsets of the child on the corresponding axes (in other words, coordinates of the child in a coordinate system where the origin is the parent's location instead of the global origin); <span class="badge badge-primary">ax</span>, <span class="badge badge-primary">ay</span>, and <span class="badge badge-primary">az</span> are (relative to parent) rotations of the child around corresponding axes:</p>
+
+  <kbd>lock <span class="badge badge-secondary">id (starts from <kbd>10000</kbd>)</span> main <span class="badge badge-primary">parent point</span> add <span class="badge badge-primary">child point</span></kbd><br>
+
+  <kbd>dx <span class="badge badge-primary">dx</span> dy <span class="badge badge-primary">dy</span> dz <span class="badge badge-primary">dz</span> ax <span class="badge badge-primary">ax</span> ay <span class="badge badge-primary">ay</span> az <span class="badge badge-primary">az</span></kbd>
+
+  <div class="row mt-3">
+    <div class="col-12 col-md-4 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt1_details+lock.png" /></div>
+    <div class="col-12 col-md-8 m-2 m-md-0"><img class="img-fluid" src="img/vcam/bolt1+options.png" /></div>
+  </div>
+
+  <h2 id="special-points" class="mt-3">Special points</h2>
+  <p class="mw-960px">Some special points exist to make alignment easier:</p>
+  <ul class="list-group mw-960px mt-3">
+    <li class="list-group-item"><span class="badge badge-secondary">8001</span>&ndash;<span class="badge badge-secondary">8004</span> &mdash; centers of wheels (on their axes);</li>
+    <li class="list-group-item"><span class="badge badge-secondary">8005</span> and <span class="badge badge-secondary">8006</span> &mdash; middle of wheels' axes.</li>
+  </ul>
+
+  <h2 id="about" class="mt-3"><i class="fas fa-info-circle"></i> About</h2>
+  <p class="mw-960px text-left">
+    You aren't interested in this app if:<br>
+    &bull; You have a team of professional automotive designers, $1m budget and 1 year of time;<br>
+    &bull; You have 1 year of time to learn 3D modeling and 1 year to create a car model.<br>
+    <br>
+    <b>If you have a great idea and 1 week of time, then VarCAM is the only app on Earth that gives you the ability to obtain a 3D-printable solid car model.</b><br>
+    <br>
+    Ultra fast 4-wheel concept car creation, toy car 3D prints &amp; real car tuning.<br>
+    <br>
+    All surfaces and frames are solid, quickly adjustable using a few parameters & optimised for FDM 3D printing.<br>
+    <br>
+    Using interpolation, approximation, combination of complex 3D operators in simple parametric part generators and elements of AI you can obtain a model of a car up to 100 times faster.<br>
+    <br>
+    50% detalization. If you wish to make a model for car factory production &mdash; post processing in a standard automotive CAD app is required. VarCAM can export in <kbd>.stl</kbd>, <kbd>.igs</kbd> (<a href="https://en.wikipedia.org/wiki/IGES" target="_blank" rel="noopener">IGES</a>).<br>
+    <br>
+    Most of operators are generated automatically, but at any point you have full control of the car's "DNA".<br>
+    <br>
+    All surfaces (of class A) are generated automatically from a set of lines and cubic splines.<br>
+    <br>
+    When you move control points all connections stay connected and the car model is ready to 3D print at any time.<br>
+    <br>
+    &bull; 8 years of research & development;<br>
+    &bull; 2 years of active programming;<br>
+    &bull; Only 1 week for <kbd>MODEL 0</kbd> creation &mdash; it is <b>included</b> with the app to use as a starting point of your great model!
+  </p>
+  <img class="img-fluid mt-3" src="img/vcam/3d_2.jpg" />
+  <img class="img-fluid mt-3" src="img/vcam/3d.jpg" />
+
+  <h2 id="notes" class="mt-3"><i class="fas fa-question-circle"></i> Notes</h2>
+  <ul class="list-group mw-960px text-left">
+    <li class="list-group-item"><b>1.</b> The included <kbd>MODEL 0</kbd> uses all of the app's functionality (including, but not limited to <a href="#surfaces">Surfaces</a>, <a href="#parts">Parts</a>, and <a href="#operators">Operators</a>) &mdash; you can learn the app just by playing with it.</li>
+    <li class="list-group-item"><b>2.</b> The model is <b>not</b> saved automatically to your project file; saving is achieved using the <span class="badge badge-secondary">Save</span> button.</li>
+    <li class="list-group-item"><b>3.</b> If you want to print <kbd>MODEL 0</kbd> you must check and adjust all diameters of holes, dimensions of bearings and surface heights via parameters according to your printing scale. If you can't print a full part or surface:<br>
+      &bull; split surface using additional <kbd>modi</kbd> (see <a href="#surfaces">Surfaces</a> for more information);<br>
+      &bull; <a href="#tube"><kbd>tube</kbd></a> can be split in half using the <span class="badge badge-secondary">Split</span> button.</li>
+    <li class="list-group-item"><b>4.</b> In some cases your 3D slicer may incorrectly determine solid parts &mdash; in this case try:<br>
+      &bull; simply importing the <kbd>.stl</kbd> into <a href="https://www.blender.org/" target="_blank" rel="noopener">Blender</a> and exporting it without making any changes;<br>
+      &bull; loading the <kbd>.igs</kbd> in compatible software and transforming separate NURBS surfaces into solid object(s).</li>
+  </ul>
+
+  <div class="mb-3"></div>
+</div>

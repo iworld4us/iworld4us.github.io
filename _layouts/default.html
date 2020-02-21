@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="Aleksandr Varaksa">
+
+    <link rel="icon" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <title>{% if page.title != "Home" %}{{ page.title }} | {% endif %}Overqualified Idea Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="site-header navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="/">
+            <div id="brand">&nbsp;Overqualified Idea Generator</div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav flex-lg-row justify-content-around">
+                <li class="nav-item {% if page.title == "Home" %}active{% endif %}">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item {% if page.title == "NEXT-ATX" %}active{% endif %}">
+                    <a class="nav-link" href="/next-atx">NEXT-ATX</a>
+                </li>
+                <li class="nav-item {% if page.title == "DIY 3D Printer" %}active{% endif %}">
+                    <a class="nav-link" href="/diy-3d-printer">DIY 3D Printer</a>
+                </li>
+                <li class="nav-item {% if page.title == "VarCAM" %}active{% endif %}">
+                    <a class="nav-link" href="/VarCAM">VarCAM</a>
+                </li>
+                <li class="nav-item {% if page.title == "Papercraft4 3D" %}active{% endif %}">
+                    <a class="nav-link" href="/Papercraft4-3D">Papercraft4 3D</a>
+                </li>
+                <li class="nav-item {% if page.title == "Home Repair 3D" %}active{% endif %}">
+                    <a class="nav-link" href="/home-repair-3d">Home Repair 3D</a>
+                </li>
+                <li class="nav-item {% if page.title == "Vector FX" %}active{% endif %}">
+                    <a class="nav-link" href="/Vector-FX">Vector FX</a>
+                </li>
+                <li class="nav-item {% if page.title == 1991 %}active{% endif %}">
+                    <a class="nav-link" href="/1991">1991</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <footer class="p-3">
+        <div class="text-white text-center">
+            &copy; Aleksandr Varaksa 1991–2020
+            <div class="d-block d-sm-none w-100"></div>
+            <a href="https://apps.apple.com/us/developer/aleksandr-varaksa/id478681813" role="button" class="mx-2 my-1 btn btn-outline-light wow flipInX" target="_blank" rel="noopener">All products</a>
+            <a href="mailto:i_appstore@yahoo.com" role="button" class="my-1 btn btn-outline-light wow flipInX">Contact Us</a>
+        </div>
+    </footer>
+
+    <div id="scroll-widget" class="visible">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>
+        // WOW
+        new WOW().init();
+
+        // Scroll widget
+        $('#scroll-widget').on('click', event => {
+            $('html, body').animate({
+                scrollTop: "+=" + visualViewport.height.toString()
+            }, 1000);
+        });
+
+        $(document).on('scroll', event => {
+            if ($(document).height() < (scrollY + visualViewport.height + 1)) {
+                $('#scroll-widget').removeClass('visible');
+            } else {
+                $('#scroll-widget').addClass('visible');
+            }
+        });
+
+        // GA
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-69665128-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    {% if page.title == "VarCAM" %}
+    <script>
+        $(function () {
+            // Collapse navbar on link click
+            $('.navbar-collapse li a:not(.dropdown-toggle)').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+    {% endif %}
+</body>
+
+</html>
