@@ -1,0 +1,31 @@
+#page-nav {
+  top: 56px !important;
+}
+
+h1:before,
+h2:before,
+h3:before {
+  display: block;
+  content: " ";
+  margin-top: -112px;
+  padding-top: 112px;
+  visibility: hidden;
+}
+
+.topmost-double {
+  margin-top: 112px;
+}
+
+@media (min-width: 768px) {
+
+  h1:before,
+  h2:before,
+  h3:before {
+    margin-top: -114px !important;
+    padding-top: 114px !important;
+  }
+
+  .topmost-double {
+    margin-top: 114px;
+  }
+}
