@@ -66,7 +66,8 @@
     store: https://apps.apple.com/us/app/calendar-3d/id1202238610?mt=12&ls=1
     icon: c3D_175.jpg
 
-  - name: Villa 3D - CAD Home Design
-    desc: 'Move, transform, rotate boxes (made with different materials) to create a project. Area, volume, and number of necessary materials for real construction are automatically calculated!'
-    store: https://apps.apple.com/us/app/villa-3d/id880736824?mt=8&ls=1
-    icon: villa.jpg
+  - name: Stl2Gcode 5x
+    mac: true
+    desc: 'Stl2Gcode 5x opens .stl files, scales, rotates, slices layers and generates G-code for laser or mill cutters. It can be used for make DIY models or prototypes of anything from soft materials (plastic, wood, styrofoam, foam plastic).'
+    more: /Stl2Gcode-5x
+    icon: /stl2gcode_5x/icon.png
