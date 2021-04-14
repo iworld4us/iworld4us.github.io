@@ -1,3 +1,4 @@
+include: ["_redirects"]
 defaults:
   -
     scope:
