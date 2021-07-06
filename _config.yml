@@ -1,3 +1,5 @@
+include: ["_redirects"]
+exclude: ["unused-images"]
 defaults:
   -
     scope:
