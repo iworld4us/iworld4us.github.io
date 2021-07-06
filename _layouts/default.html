@@ -1,16 +1,36 @@
+{% capture page_full_title %}{% if page.title != "Home" %}{{ page.title }} | {% endif %}Overqualified Idea Generator{% endcapture %}
+{% capture page_absolute_url %}https://iworld4us.com{{ page.url | replace: ".html", ""}}{% endcapture %}
+{% capture page_any_image %}{% if page.large_image %}https://iworld4us.com/img/{{ page.large_image }}{% elsif page.image %}https://iworld4us.com/img/{{ page.image }}{% else %}https://iworld4us.com/favicon.png{% endif %}{% endcapture %}
+
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ page_full_title }}</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="author" content="Aleksandr Varaksa">
 
     <link rel="icon" href="/favicon.png">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
-    <title>{% if page.title != "Home" %}{{ page.title }} | {% endif %}Overqualified Idea Generator</title>
+    <meta property="og:site_name" content="Overqualified Idea Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:url" content="{{ page_absolute_url }}" />
+    <meta property="og:image" content="{{ page_any_image }}" />
+
+    <meta name="twitter:card" content="summary{% if page.large_image %}_large_image{% endif %}" />
+    <meta name="twitter:title" content="{{ page_full_title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image" content="{{ page_any_image }}" />
+    <meta name="twitter:site" content="@overqualifiedav" />
+    <meta name="twitter:creator" content="@overqualifiedav" />
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -30,28 +50,28 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav flex-lg-row justify-content-around">
-                <li class="nav-item {% if page.title == "Home" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " Home" %}active{% endif %}">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item {% if page.title == "NEXT-ATX" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " NEXT-ATX" %}active{% endif %}">
                     <a class="nav-link" href="/next-atx">NEXT-ATX</a>
                 </li>
-                <li class="nav-item {% if page.title == "DIY 3D Printer" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " DIY 3D Printer" %}active{% endif %}">
                     <a class="nav-link" href="/diy-3d-printer">DIY 3D Printer</a>
                 </li>
-                <li class="nav-item {% if page.title == "VarCAM" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " VarCAM" %}active{% endif %}">
                     <a class="nav-link" href="/VarCAM">VarCAM</a>
                 </li>
-                <li class="nav-item {% if page.title == "Stl2Gcode 5x" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " Stl2Gcode 5x" %}active{% endif %}">
                     <a class="nav-link" href="/Stl2Gcode-5x">Stl2Gcode 5x</a>
                 </li>
-                <li class="nav-item {% if page.title == "Papercraft4 3D" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " Papercraft4 3D" %}active{% endif %}">
                     <a class="nav-link" href="/Papercraft4-3D">Papercraft4 3D</a>
                 </li>
-                <li class="nav-item {% if page.title == "Home Repair 3D" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " Home Repair 3D" %}active{% endif %}">
                     <a class="nav-link" href="/home-repair-3d">Home Repair 3D</a>
                 </li>
-                <li class="nav-item {% if page.title == "Vector FX" %}active{% endif %}">
+                <li class="nav-item {% if page.title == " Vector FX" %}active{% endif %}">
                     <a class="nav-link" href="/Vector-FX">Vector FX</a>
                 </li>
                 <li class="nav-item {% if page.title == 1991 %}active{% endif %}">
