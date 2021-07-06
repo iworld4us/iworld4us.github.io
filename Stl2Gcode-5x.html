@@ -7,63 +7,66 @@ image: stl2gcode-5x/icon.png
 <link rel="stylesheet" href="/css/secondary-nav.css">
 
 <nav id="page-nav" class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-  <a class="navbar-brand">Stl2Gcode 5x</a>
+  <div class="container-fluid">
+    <a class="navbar-brand ms-2">Stl2Gcode 5x</a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav-menu" aria-controls="page-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav-menu" aria-controls="page-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse justify-content-end" id="page-nav-menu">
-    <ul class="nav flex-column flex-lg-row justify-content-around">
-      <li class="nav-item my-3 my-lg-0">
-        <a href="https://apps.apple.com/app/stl2gcode-5x/id1540482143?mt=12&ls=1" class="nav-link btn btn-success" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
-      </li>
+    <div class="collapse navbar-collapse justify-content-end" id="page-nav-menu">
+      <ul class="nav flex-column flex-lg-row justify-content-around">
+        <a href="https://apps.apple.com/app/stl2gcode-5x/id1540482143?mt=12&ls=1" class="my-3 my-lg-0 btn btn-success" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
 
-      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#parameters">Parameters</a></li>
-      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#gcode-example">G-code Example</a></li>
-      <li class="nav-item ml-0 ml-md-2"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-    </ul>
+        <li class="nav-item ms-0 ms-md-2"><a class="nav-link" href="#parameters">Parameters</a></li>
+        <li class="nav-item ms-0 ms-md-2"><a class="nav-link" href="#gcode-example">G-code Example</a></li>
+        <li class="nav-item ms-0 ms-md-2"><a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <div class="container-fluid text-center topmost-double">
   <h1 class="mt-3">Stl2Gcode 5x &mdash; Convert STL directly to G-code</h1>
-  <a href="https://apps.apple.com/app/stl2gcode-5x/id1540482143?mt=12&ls=1" class="nav-link btn btn-success mw-960px" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
 
-  <div class="mt-3 embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nWYnH6ULKkw?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
+  <div class="d-grid mw-960px">
+    <a href="https://apps.apple.com/app/stl2gcode-5x/id1540482143?mt=12&ls=1" class="btn btn-success" target="_blank" rel="noopener"><i class="fab fa-app-store"></i> Mac App Store</a>
+  </div>
+
+  <div class="mt-3 ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/nWYnH6ULKkw?rel=0&showinfo=0" frameborder="0" title="Video about Stl2Gcode 5x"></iframe>
   </div>
 
   <h2 class="mt-3" id="parameters">Parameters</h2>
   <img class="img-fluid" src="img/stl2gcode-5x/1.png" />
-  <p class="mw-960px mt-3 text-left">
+  <p class="mw-960px mt-3 text-start">
     <kbd>OFFSET</kbd> &mdash; distance X, Y from zero point to minimum traveling position of spindle of your CNC.<br>
   </p>
   <img class="img-fluid" src="img/stl2gcode-5x/3.png" />
-  <p class="mw-960px mt-3 text-left">
+  <p class="mw-960px mt-3 text-start">
     <kbd>T_MAX</kbd> &mdash; maximum X, Y, Z traveling position of your CNC spindle (green frames in projection screens).<br>
     <kbd>T_A_ROT</kbd> &mdash; A axis rotates around X axes (or Y, Z) - depends from your CNC construction.<br>
     <kbd>T_B_ROT</kbd> &mdash; B axis rotates around X axes (or Y, Z) - depends from your CNC construction.<br>
-    <kbd>T_A_MIN_MAX</kbd> &mdash; A axis rotation angle limits (In XYZAB <span class="badge badge-primary">5x</span> mode).<br>
-    <kbd>T_B_MIN_MAX</kbd> &mdash; B axis rotation angle limits (In XYZAB <span class="badge badge-primary">5x</span> mode).<br>
-    &bull; In XYZAC or XYZBC <span class="badge badge-primary">5x</span> modes <kbd>T_A_MIN_MAX</kbd> and <kbd>T_B_MIN_MAX</kbd> must be equal.<br>
+    <kbd>T_A_MIN_MAX</kbd> &mdash; A axis rotation angle limits (In XYZAB <span class="badge bg-primary">5x</span> mode).<br>
+    <kbd>T_B_MIN_MAX</kbd> &mdash; B axis rotation angle limits (In XYZAB <span class="badge bg-primary">5x</span> mode).<br>
+    &bull; In XYZAC or XYZBC <span class="badge bg-primary">5x</span> modes <kbd>T_A_MIN_MAX</kbd> and <kbd>T_B_MIN_MAX</kbd> must be equal.<br>
     <kbd>T_TOOL_L</kbd> &mdash; length of tool.<br>
     <kbd>T_TOOL_D</kbd> &mdash; diameter of tool (or laser width).<br>
     <kbd>T_LASER_MODE</kbd> &mdash; Mode: <kbd>1</kbd> &mdash; laser, <kbd>0</kbd> &mdash; mill.<br>
     <kbd>T_SPINDLE_NOSE</kbd> &mdash; distance from zero Z of CNC work position to nose of spindle when <kbd>Z = 0</kbd>.<br>
-    <kbd>T_SPINDLE_L</kbd> &mdash; distance from spindle nose to point of rotation (<span class="badge badge-primary">5x</span> mode).<br>
+    <kbd>T_SPINDLE_L</kbd> &mdash; distance from spindle nose to point of rotation (<span class="badge bg-primary">5x</span> mode).<br>
     <br>
     The position and size of spindle and tool need to be set in such a way that the picture corresponds to the real spindle and tool when the work position Z of your CNC is <kbd>0</kbd>:
   </p>
   <img class="img-fluid" src="img/stl2gcode-5x/2.png" />
-  <p class="mw-960px mt-3 text-left">
+  <p class="mw-960px mt-3 text-start">
     <kbd>T_RPM</kbd> &mdash; tool rotation speed or laser intensity.<br>
     <kbd>T_FEED</kbd> &mdash; feed.<br>
     <br>
-    <kbd>L_5X</kbd> &mdash; mode: <kbd>0</kbd> &mdash; <span class="badge badge-primary">3x</span>, <kbd>1</kbd> &mdash; <span class="badge badge-primary">5x</span>, <kbd>2</kbd> &mdash; <span class="badge badge-primary">5x &amp; 3x</span>.<br>
+    <kbd>L_5X</kbd> &mdash; mode: <kbd>0</kbd> &mdash; <span class="badge bg-primary">3x</span>, <kbd>1</kbd> &mdash; <span class="badge bg-primary">5x</span>, <kbd>2</kbd> &mdash; <span class="badge bg-primary">5x &amp; 3x</span>.<br>
   </p>
   <img class="img-fluid" src="img/stl2gcode-5x/4.png" />
-  <p class="mw-960px mt-3 text-left">
+  <p class="mw-960px mt-3 text-start">
     <kbd>L_PASS</kbd> &mdash; 1 - pass mode or n - pass mode cutting.<br>
     <kbd>L_LAYER_DIST</kbd> &mdash; distance between layers (only in view).<br>
     <kbd>L_LAYER_H</kbd> &mdash; height of material (layer).<br>
@@ -74,7 +77,7 @@ image: stl2gcode-5x/icon.png
   <div class="mb-3"></div>
 
   <h2 class="mt-3" id="gcode-example">G-code Example</h2>
-  <p class="mw-960px mt-3 text-left">
+  <p class="mw-960px mt-3 text-start">
     Produced G-code is suitable for use in DIY CNC machines running GRBL. This is an example of G-code for a laser CNC:<br>
     <kbd>G90 (use absolute coordinates)</kbd><br>
     <kbd>M5</kbd><br>
@@ -83,13 +86,13 @@ image: stl2gcode-5x/icon.png
     <kbd>M4 S1000</kbd><br>
     <kbd>G1 X161.00 Y11.85 Z32.87 A-21.76 B0.00 F250</kbd><br>
     <kbd>M5</kbd><br>
-    <span class="badge badge-secondary">&bull; &bull; &bull;</span><br>
+    <span class="badge bg-secondary">&bull; &bull; &bull;</span><br>
     <kbd>G0 Z45.00 X0 Y0 A0.00 B0.00 (move back to origin)</kbd><br>
   </p>
   <div class="mb-3"></div>
 
   <h2 id="about" class="mt-3"><i class="fas fa-info-circle"></i> About</h2>
-  <p class="mw-960px text-left">
+  <p class="mw-960px text-start">
     Stl2Gcode 5x opens .stl files, scales, rotates, slices layers and generates G-code for laser or mill cutters. It can be used for make DIY models or prototypes of anything from soft materials (plastic, wood, styrofoam, foam plastic).<br><br>
 
     Supported type of cutters: laser or mill (in cutting mode): 3 (XYZ) or 5 axes (XYZAB, XYZAC, XYZBC). At this time, only laser with XYZAB has been tested.<br><br>

@@ -12,8 +12,8 @@ large_image: featured-image.png
   <div class="row mx-auto p-lg-8 px-3 px-md-5 py-5">
     <div class="col-12 col-md-6">
       <h2 class="wow zoomIn">VarCAM &mdash; CONCEPT CAR CONSTRUCTOR</h2>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xT3mScXst_4?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/xT3mScXst_4?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
       </div>
       <br>
       <a class="btn btn-lg btn-primary" href="VarCAM">Learn more</a>
@@ -28,11 +28,11 @@ large_image: featured-image.png
 </div>
 
 {% for group in site.data.featured_apps %}
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 p-lg-8">
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 p-lg-8">
   {% for app in group %}
-  <div class="bg-light mr-md-3 px-3 px-md-5 py-3 py-md-5 text-center wow fadeIn{% if forloop.first %}Left{% else %}Right{% endif %}">
+  <div class="bg-light me-md-3 px-3 px-md-5 py-3 py-md-5 text-center wow fadeIn{% if forloop.first %}Left{% else %}Right{% endif %}">
     <div class="my-3 py-3">
-      <h2 class="display-5">{{ app.name }}{% if app.mac %} <span class="badge badge-dark">Mac</span>{% endif %}</h2>
+      <h2>{{ app.name }}{% if app.mac %} <span class="badge bg-dark">Mac</span>{% endif %}</h2>
       <p class="lead">{{ app.desc }}</p>
 
       {% if app.more %}<a href="{{ app.more }}" class="btn btn-primary">Learn more</a>{% endif %}

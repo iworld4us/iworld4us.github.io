@@ -32,52 +32,54 @@
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link href="/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav class="site-header navbar fixed-top navbar-expand-xl navbar-dark">
-        <a class="navbar-brand" href="/">
-            <div id="brand">&nbsp;Overqualified Idea Generator</div>
-        </a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <div id="brand">&nbsp;Overqualified Idea Generator</div>
+            </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav flex-lg-row justify-content-around">
-                <li class="nav-item {% if page.title == 'Home' %}active{% endif %}">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item {% if page.title == 'NEXT-ATX' %}active{% endif %}">
-                    <a class="nav-link" href="/next-atx">NEXT-ATX</a>
-                </li>
-                <li class="nav-item {% if page.title == 'DIY 3D Printer' %}active{% endif %}">
-                    <a class="nav-link" href="/diy-3d-printer">DIY 3D Printer</a>
-                </li>
-                <li class="nav-item {% if page.title == 'VarCAM' %}active{% endif %}">
-                    <a class="nav-link" href="/VarCAM">VarCAM</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Stl2Gcode 5x' %}active{% endif %}">
-                    <a class="nav-link" href="/Stl2Gcode-5x">Stl2Gcode 5x</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Papercraft4 3D' %}active{% endif %}">
-                    <a class="nav-link" href="/Papercraft4-3D">Papercraft4 3D</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Home Repair 3D' %}active{% endif %}">
-                    <a class="nav-link" href="/home-repair-3d">Home Repair 3D</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Vector FX' %}active{% endif %}">
-                    <a class="nav-link" href="/Vector-FX">Vector FX</a>
-                </li>
-                <li class="nav-item {% if page.title == 1991 %}active{% endif %}">
-                    <a class="nav-link" href="/1991">1991</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav flex-lg-row justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'Home' %}active{% endif %}" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'NEXT-ATX' %}active{% endif %}" href="/next-atx">NEXT-ATX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'DIY 3D Printer' %}active{% endif %}" href="/diy-3d-printer">DIY 3D Printer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'VarCAM' %}active{% endif %}" href="/VarCAM">VarCAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'Stl2Gcode 5x' %}active{% endif %}" href="/Stl2Gcode-5x">Stl2Gcode 5x</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'Papercraft4 3D' %}active{% endif %}" href="/Papercraft4-3D">Papercraft4 3D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'Home Repair 3D' %}active{% endif %}" href="/home-repair-3d">Home Repair 3D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 'Vector FX' %}active{% endif %}" href="/Vector-FX">Vector FX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.title == 1991 %}active{% endif %}" href="/1991">1991</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -104,9 +106,9 @@
         <i class="fas fa-chevron-down"></i>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // WOW
         new WOW().init();
