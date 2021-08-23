@@ -32,25 +32,26 @@
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" integrity="sha512-3kSeajrEqMrItwRkYz09bOsHsl4/wpoT6mgw5Aw+eSLweQtX7kZp2P/Dm7hnUg/TrbTGesAgCPwvZpllhuROTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="site-header navbar fixed-top navbar-expand-xl navbar-dark">
-        <div class="container-fluid">
+    <nav class="site-header navbar fixed-top navbar-expand-xxl navbar-dark shadow-sm">
+        <div class="container-fluid ms-2">
             <a class="navbar-brand" href="/">
-                <div id="brand">&nbsp;Overqualified Idea Generator</div>
+                <div id="brand">Overqualified Idea Generator</div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav flex-lg-row justify-content-around">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-lg-row justify-content-between justify-content-xxl-around w-100 mt-2 mt-xxl-0">
                     <li class="nav-item">
                         <a class="nav-link {% if page.title == 'Home' %}active{% endif %}" href="/">Home</a>
                     </li>
@@ -78,6 +79,25 @@
                     <li class="nav-item">
                         <a class="nav-link {% if page.title == 1991 %}active{% endif %}" href="/1991">1991</a>
                     </li>
+
+                    <li class="nav-item mb-2 mb-xxl-0">
+                        <div class="btn-group btn-group-sm mt-1" role="group" aria-label="Theme selection button group">
+                            <input type="radio" class="btn-check" name="theme-selector" id="theme-selector-system" value="system" autocomplete="off" checked>
+                            <label class="btn btn-secondary" for="theme-selector-system">
+                                <span class="fas fa-adjust"></span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="theme-selector" id="theme-selector-light" value="light" autocomplete="off">
+                            <label class="btn btn-secondary" for="theme-selector-light">
+                                <span class="fas fa-sun"></span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="theme-selector" id="theme-selector-dark" value="dark" autocomplete="off">
+                            <label class="btn btn-secondary" for="theme-selector-dark">
+                                <span class="fas fa-moon"></span>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -85,11 +105,11 @@
 
     {{ content }}
 
-    <footer class="p-3">
-        <div class="text-white text-center">
-            <i class="fas fa-copyright" aria-label="&copy;"></i> Aleksandr Varaksa 1991&ndash;2021
+    <footer class="p-3 text-light">
+        <div class="text-center">
+            <i class="fas fa-copyright" aria-label="&copy;"></i> Aleksandr Varaksa 1991&ndash;2021. Website by <a href="https://github.com/u32i64" target="_blank" rel="noopener" class="link-light">u32i64</a>.
 
-            <div class="d-block d-sm-none w-100"></div>
+            <div class="d-block d-lg-none w-100"></div>
 
             <div class="btn-group mx-2 my-1" role="group">
                 <a href="mailto:i_appstore@yahoo.com" role="button" class="btn btn-outline-light wow flipInX"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Contact Us</a>
@@ -107,16 +127,49 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js" integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        // Theme selector
+        let colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme() {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && colorSchemeQuery.matches)) {
+                $('html').addClass('dark');
+            } else {
+                $('html').removeClass('dark');
+            }
+        }
+
+        $('input[type=radio][name=theme-selector]').change(function () {
+            let value = this.value;
+
+            if (value === 'system') {
+                localStorage.removeItem('theme');
+            } else {
+                localStorage.theme = value;
+            }
+
+            applyTheme();
+        });
+
+        $(() => {
+            applyTheme();
+
+            if ('theme' in localStorage) {
+                $('input[type=radio][name=theme-selector]').val([localStorage.theme]);
+            }
+        });
+
+        colorSchemeQuery.addListener(applyTheme);
+
         // WOW
         new WOW().init();
 
         // Scroll widget
         $('#scroll-widget').on('click', event => {
             $('html, body').animate({
-                scrollTop: "+=" + visualViewport.height.toString()
+                scrollTop: '+=' + visualViewport.height.toString()
             }, 1000);
         });
 
