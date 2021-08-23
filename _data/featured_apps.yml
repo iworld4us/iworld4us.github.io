@@ -1,7 +1,7 @@
 -
   - name: Papercraft4 3D
     mac: true
-    desc: 'Convert 4 photos directly into textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or <kbd>IGES</kbd> format (NURBS surfaces) for use in CAD/CAM CNC and 3D printers.'
+    desc: 'Convert 4 photos directly into a textured 3D model (<kbd>.obj</kbd> format), textured "paper model" prints or <kbd>IGES</kbd> format (NURBS surfaces) for use in CAD/CAM CNC and 3D printers.'
     more: /Papercraft4-3D
     icon: papercraft4-3d/icon.jpg
 
@@ -13,13 +13,13 @@
 
 -
   - name: Only for Women
-    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday/Monday (<kbd>s/m</kbd> button).<br>10 new themes for iPhone.<br>12 new flowers for iPad version.'
+    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday or Monday (<kbd>s/m</kbd> button).<br>10 new themes for iPhone.<br>12 new flowers for iPad version.'
     store: https://apps.apple.com/us/app/only-for-women/id488899924?mt=8&ls=1
     icon: only-for-women/icon.jpg
 
   - name: Period Tracker 3D
     mac: true
-    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday/Monday.<br>Keeps history of menstrual cycles.<br>You can add a note to each cycle.'
+    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday or Monday.<br>Keeps history of menstrual cycles.<br>You can add a note to each cycle.'
     store: https://apps.apple.com/us/app/period-tracker-3d/id1200378390?mt=12&ls=1
     icon: only-for-women/icon.jpg
 
@@ -37,25 +37,25 @@
 
 -
   - name: Home Repair 3D Pro
-    desc: 'Are you a contractor that needs to quickly make quotes for your clients in the field? Or maybe you are starting a home landscaping or renovation project, and need a quick way to estimate costs and quantities? Now you can calculate an estimate for house construction as easy as for room renovation.'
+    desc: 'Are you a contractor that needs to quickly make quotes for your clients in the field? Or maybe you are starting a home landscaping or renovation project, and need a quick way to estimate costs and quantities? Now you can calculate an estimate for house construction as easily as for room renovation.'
     more: /home-repair-3d
     icon: home-repair-3d/icon.jpg
 
   - name: Home Repair 3D Pro
     mac: true
-    desc: 'Create a project of your dream!<br>Now you can estimate the average costs for a room renovation or house construction as easy as playing a game.'
+    desc: 'Create a project of your dream!<br>Now you can estimate the average costs for room renovation or house construction as easily as playing a game.'
     more: /home-repair-3d
     icon: home-repair-3d/icon.jpg
 
 -
   - name: Good Sizer 3D
     mac: true
-    desc: 'Helps you choose the right size of clothes in the US, Europe, UK, Japan or Russia.'
+    desc: 'Helps you choose the right size of clothes in the U.S., Europe, UK, Japan or Russia.'
     store: https://apps.apple.com/us/app/good-sizer-3d/id1195690408?mt=12&ls=1
     icon: good-sizer-3d/icon-macos.jpg
 
   - name: Good Sizer 3D - size converter of clothes
-    desc: 'Helps you choose the right size of clothes in the U.S., Europe, UK, Japan or Russia.<br>Enough to know one of the sizes - the rest are calculated automatically.<br>A trip to country or purchase through online stores will become easier when you have all sizes in your hand.'
+    desc: 'Helps you choose the right size of clothes in the U.S., Europe, UK, Japan or Russia.<br>Enough to know one of the sizes &mdash; the rest are calculated automatically.<br>A trip to country or purchase through online stores will become easier when you have all sizes in your hand.'
     store: https://apps.apple.com/us/app/good-sizer-size-converter/id511707401?mt=8&ls=1
     icon: good-sizer-3d/icon-ios.jpg
 
@@ -68,6 +68,6 @@
 
   - name: Stl2Gcode 5x
     mac: true
-    desc: 'Stl2Gcode 5x opens .stl files, scales, rotates, slices layers and generates G-code for laser or mill cutters. It can be used for make DIY models or prototypes of anything from soft materials (plastic, wood, styrofoam, foam plastic).'
+    desc: 'Stl2Gcode 5x opens .stl files, scales, rotates, slices layers and generates G-code for laser or mill cutters. It can be used to make DIY models or prototypes of anything from soft materials (plastic, wood, styrofoam, foam plastic).'
     more: /Stl2Gcode-5x
     icon: /stl2gcode-5x/icon.png

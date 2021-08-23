@@ -1,5 +1,9 @@
-include: ["_redirects"]
-exclude: ["unused-images"]
+include:
+  - _redirects
+exclude:
+  - unused-images
+  - Gemfile
+  - Gemfile.lock
 defaults:
   -
     scope:

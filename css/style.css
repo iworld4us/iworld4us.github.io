@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Sonsie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap");
+
+:root {
+  --bs-font-sans-serif: "Inter var",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
 
 body {
   font-size: 1.25rem;
