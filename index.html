@@ -8,29 +8,27 @@ large_image: featured-image.png
   <img src="img/featured-image.png" class="img-fluid mx-auto car-img" alt="Cars">
 </div>
 
-<div class="position-relative text-center bg-light">
+<div class="position-relative text-center bg-light mb-3">
   <div class="row mx-auto p-lg-8 px-3 px-md-5 py-5">
     <div class="col-12 col-md-6">
       <h2 class="wow zoomIn">VarCAM &mdash; CONCEPT CAR CONSTRUCTOR</h2>
       <div class="ratio ratio-16x9">
         <iframe src="https://www.youtube.com/embed/xT3mScXst_4?rel=0&showinfo=0" frameborder="0" title="Video about VarCAM"></iframe>
       </div>
-      <br>
-      <a class="btn btn-lg btn-primary" href="VarCAM">Learn more</a>
+      <a class="btn btn-lg btn-primary mt-3" href="VarCAM">Learn more</a>
     </div>
-    <div class="col-12 col-md-6 mt-3 mt-md-0">
+    <div class="col-12 col-md-6 mt-5 mt-md-0">
       <h2 class="wow zoomIn">ONLY 4 PHOTOS &amp; YOUR DREAM IS IN YOUR HANDS</h2>
       <a href="Papercraft4-3D"><img src="img/papercraft4-3d/headline.jpg" class="img-fluid" alt="The world's first paper model made from only 4 photos"></a>
-      <br><br>
-      <a class="btn btn-lg btn-primary" href="/Papercraft4-3D">Learn more</a>
+      <a class="btn btn-lg btn-primary mt-3" href="/Papercraft4-3D">Learn more</a>
     </div>
   </div>
 </div>
 
 {% for group in site.data.featured_apps %}
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 p-lg-8">
+<div class="d-md-flex flex-md-equal w-100 ps-md-3 p-lg-8">
   {% for app in group %}
-  <div class="bg-light me-md-3 px-3 px-md-5 py-3 py-md-5 text-center wow fadeIn{% if forloop.first %}Left{% else %}Right{% endif %}">
+  <div class="mx-3 mx-md-0 mb-3 me-md-3 px-3 px-md-5 pt-3 pb-5 rounded bg-light text-center wow fadeIn{% if forloop.first %}Left{% else %}Right{% endif %}">
     <div class="my-3 py-3">
       <h2>{{ app.name }}{% if app.mac %} <span class="badge bg-dark">Mac</span>{% endif %}</h2>
       <p class="lead">{{ app.desc }}</p>
