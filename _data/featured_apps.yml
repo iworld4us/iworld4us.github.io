@@ -12,18 +12,6 @@
     icon: vector-fx/icon.jpg
 
 -
-  - name: Only for Women
-    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday or Monday (<kbd>s/m</kbd> button).<br>10 new themes for iPhone.<br>12 new flowers for iPad version.'
-    store: https://apps.apple.com/us/app/only-for-women/id488899924?mt=8&ls=1
-    icon: only-for-women/icon.jpg
-
-  - name: Period Tracker 3D
-    mac: true
-    desc: 'Calendar of menstruations.<br>Two kinds of the calendar: the week begins from Sunday or Monday.<br>Keeps history of menstrual cycles.<br>You can add a note to each cycle.'
-    store: https://apps.apple.com/us/app/period-tracker-3d/id1200378390?mt=12&ls=1
-    icon: only-for-women/icon.jpg
-
--
   - name: Metal Weight &amp; Cost Calculator
     desc: 'A tool useful in a wide range of applications commonly employed by students, engineers, architects, builders and material traders.'
     store: https://apps.apple.com/us/app/metal-weight-cost/id502369496?mt=8&ls=1
